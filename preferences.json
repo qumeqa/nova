@@ -20,7 +20,7 @@
     {
         "type": "checkbox",
         "property": "nova-custom-font",
-        "label": "Custom font (Custom uiFont mode integration)",
+        "label": "Custom font",
         "defaultValue": false
     },
     {

@@ -3,7 +3,7 @@
   "homepage": "https://github.com/qumeqa/nova",
   "author": "qumeqa",
   "name": "Nova UI",
-  "description": "A modern interface theme with improved styling and visual enhancements. Based on the standard Zen theme. Recommended to use with the “New icons”, “Floating Findbar” and “Floating Statusbar” mods",
+  "description": "A modern interface theme with improved styling and visual enhancements, based on the standard Zen theme",
   "version": "1.0",
   "style": {
     "chrome": "userChrome.css"
