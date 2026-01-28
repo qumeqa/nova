@@ -1,0 +1,32 @@
+[
+    {
+        "type": "checkbox",
+        "property": "nova-enable-border",
+        "label": "Enable border (appears around all pop-ups and panels)",
+        "defaultValue": false
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-enable-corner-fix",
+        "label": "Fix the white outlines on the rounded corners (Bleeding Corners Fix mode integration)",
+        "defaultValue": true
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-enable-quietify",
+        "label": "Add a calm visualizer type of animation to mute button to use with style and ease (Quietify mode integration)",
+        "defaultValue": false
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-custom-font",
+        "label": "Custom font (Custom uiFont mode integration)",
+        "defaultValue": false
+    },
+    {
+        "property": "nova-custom-font-text",
+        "label": "Custom font family:",
+        "type": "string",
+        "placeholder": "Vela Sans, sans-serif"
+    }
+]

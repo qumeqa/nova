@@ -1,0 +1,345 @@
+:root {
+    --sep-m: 8px 0;
+    --m: 8px;
+    --m-s: 4px;
+    --m-b: 16px;
+    --btn-p: 8px 16px;
+    --btn-p-b: 12px 16px;
+    --lab-m: 8px;
+}
+
+panel[type="arrow"],
+menupopup {
+  --panel-border-color: none !important;
+  --panel-border-radius: var(--m) !important;
+  --panel-banner-item-background-color: var(--button-background-color);
+}
+
+menuitem[disabled="true"] {
+    pointer-events: none !important;
+}
+
+tooltip {
+    border-radius: var(--m-b) !important;
+    padding: var(--btn-p) !important;
+    border: none;
+    background: var(--arrowpanel-background) !important;
+}
+
+#appMenu-new-tab-button2,
+#appMenu-new-window-button2,
+#appMenu-new-zen-unsynced-window-button,
+#appMenu-new-ai-window-button,
+#appMenu-new-classic-window-button,
+#appMenu-new-private-window-button2,
+#appMenu-bookmarks-button,
+#appMenu-history-button,
+#appMenu-downloads-button,
+#appMenu-passwords-button,
+#appMenu-extensions-themes-button,
+#appMenu-unified-extensions-button,
+#appMenu-print-button2,
+#appMenu-save-file-button2,
+#appMenu-find-button2,
+#appMenu-translate-button,
+#appMenu-settings-button,
+#appMenu-more-button2,
+#appMenu-report-broken-site-button,
+#appMenu-help-button2,
+#appMenu-quit-button2,
+#appMenuRecentlyClosedTabs,
+#appMenuSearchHistory,
+#appMenuClearRecentHistory,
+#PanelUI-historyMore,
+#panelMenuBookmarkThisPage,
+#panelMenu_searchBookmarks,
+#panelMenu_viewBookmarksToolbar,
+#panelMenu_showAllBookmarks,
+#toolbar-context-customize,
+#appmenu-moreTools-button {
+    list-style-image: none !important;
+}
+
+:is(#zenCreateNewPopup, #placesContext, #contentAreaContextMenu) {
+  & :is(menuitem, menu):not([type]) .menu-icon {
+    display: none !important;
+  }
+  
+  & menu menuitem[type] .menu-icon {
+    display: block !important;
+  }
+}
+
+#appMenu-popup *, panel * {
+    scrollbar-color: #80808050 var(--button-background-color) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    
+    /* блоки */
+    
+    .panel-header {
+        min-height: max-content !important;
+        justify-content: start !important;
+        
+        h1 {
+            display: none !important;
+        }
+    }
+    
+    .subview-subheader {
+        padding: var(--m) var(--m-b) !important;
+        font-size: 12px !important;
+    }
+    
+    toolbarseparator, panelview {
+        padding: var(--sep-m) !important;
+    }
+    
+    #appMenu-zoom-controls {
+        padding-left: var(--m-b) !important;
+        margin-top: var(--m) !important;
+        padding-top: var(--m) !important;
+    }
+    
+    /* кнопки */
+    
+    toolbarbutton {
+        padding: var(--btn-p) !important;
+        border-radius: 0 !important;
+    }
+    
+    .subviewbutton-back {
+        height: 34px !important;
+        width: 48px !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    #appMenu-fullscreen-button2 {
+        display: none !important;
+    }
+    
+    #appMenu-zoomReset-button2 {
+        padding: 0 !important;
+    }
+}
+
+/* блоки */
+
+/* menuseparator,
+.menupopup-arrowscrollbox,
+panelmultiview {
+    padding: var(--sep-m) !important;
+} */
+
+menuseparator,
+.menupopup-arrowscrollbox {
+    padding: var(--sep-m) !important;
+}
+
+panelview {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+menupopup * {
+    margin: 0 !important;
+    
+    menupopup {
+        margin-left: -4px !important;
+    }
+}
+
+menu,
+menuitem {
+    padding: var(--btn-p) !important;
+    border-radius: 0 !important;
+    
+    &:where([disabled="true"]) {
+        color: var(--text-color-disabled);
+        text-shadow: none;
+    }
+
+    &:where([_moz-menuactive]:not([disabled="true"])),
+    &:where([_moz-menuactive][disabled="true"]) {
+        color: var(--button-text-color-hover) !important;
+        background: var(--button-background-color-hover) !important;
+    }
+}
+
+menuitem[badge]::after {
+    margin-left: 16px !important;
+    margin-block: -10px !important;
+    border: none !important;
+    padding: 4px 8px !important;
+    background: var(--toolbarbutton-hover-background) !important;
+    border-radius: 4px !important;
+}
+
+#full-page-translations-panel-multiview {
+    padding: var(--m) var(--m-b) !important;
+    width: 28em !important;
+
+    .panel-header {
+        padding: 0 !important;
+        margin: 0 !important;
+        min-height: max-content !important;
+        justify-content: initial !important;
+        padding-bottom: var(--m-b) !important;
+
+        * {padding: 0 !important;
+        margin: 0 !important;}
+        
+        h1 {
+            display: initial !important;
+        }
+    }
+}
+
+.panel-viewcontainer, .panel-viewstack {
+    width: 100% !important;
+}
+
+#full-page-translations-panel-lang-selection {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border-radius: var(--m-s) !important;
+    overflow: hidden !important;
+    background: var(--button-background-color-hover) !important;
+}
+
+.translations-panel-footer {
+    gap: var(--m) !important;
+    padding-top: var(--m-b) !important
+}
+
+/* лейблы */
+
+.menu-icon {
+  margin-inline-end: 0 !important;
+}
+
+menupopup[needsgutter] > :is(menu, menuitem) > .menu-icon {
+  margin-inline-end: var(--lab-m) !important;
+}
+
+menupopup[needsgutter] > :is(menu, menuitem) label {
+  margin-left: 0 !important;
+}
+
+menuitem[checked="true"] > .menu-icon {
+  margin-inline-end: var(--lab-m) !important;
+}
+
+menuitem[type="checkbox"],
+menuitem[type="radio"] {
+  padding-left: var(--m-b) !important;
+}
+
+:is(
+    .menuitem-iconic,
+    .menu-iconic,
+    .subviewbutton-iconic,
+    .unified-nav-current,
+    .menuitem-with-favicon,
+    #appMenu-fxa-label2
+):not(menupopup[needsgutter] > *) label {
+    margin-left: var(--lab-m) !important;
+}
+
+#label {
+    padding-right: var(--lab-m) !important;
+}
+
+#full-page-translations-panel-from-label,
+#full-page-translations-panel-to-label {
+    position: relative !important;
+    padding: var(--btn-p-b) !important;
+    width: 100% !important;
+    pointer-events: none !important;
+    color: var(--text-color-deemphasized);
+}
+
+/* кнопки */
+
+#full-page-translations-panel-translate,
+#full-page-translations-panel-restore-button,
+#full-page-translations-panel-cancel {
+    padding: var(--btn-p-b) !important;
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: var(--m-s) !important;
+}
+
+#full-page-translations-panel-to,
+#full-page-translations-panel-from {
+    position: relative !important;
+    padding: var(--btn-p-b) !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+#full-page-translations-panel-from,
+#full-page-translations-panel-to {
+    position: absolute !important;
+    right: 0 !important;
+    background: var(--button-background-color) !important;
+}
+
+#full-page-translations-panel-from {
+    top: 0 !important;
+}
+
+#full-page-translations-panel-to {
+    bottom: 0 !important;
+}
+
+#zen-site-data-header {
+    position: relative !important;
+    padding: var(--m-b) var(--m) !important;
+    padding-top: var(--m) !important;
+    gap: 0 !important;
+    width: var(--panel-width);
+
+    toolbarbutton {
+        color: none !important;
+
+        &::before {
+            background: none !important;
+        }
+
+        image {
+            color: initial !important;
+        }
+    }
+}
+
+#full-page-translations-panel-from-label::before, #zen-site-data-header::before {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    border-top: 1px solid var(--panel-separator-color) !important;
+    content: "" !important;
+}
+
+#translations-panel-settings {
+    width: 20px !important;
+    height: 20px !important;
+    background: none !important;
+}
+
+
+
+
+
+
+
+
+/* #zen-unified-site-data-panel{
+    --panel-background: transparent !important;
+
+} */

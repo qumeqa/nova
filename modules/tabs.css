@@ -1,0 +1,9 @@
+/* tab panel padding fix */
+.workspace-arrowscrollbox, #tabbrowser-arrowscrollbox {
+  padding: 0 !important;
+}
+
+zen-workspace-icons .subviewbutton  {
+  padding: 3px !important;
+  border-radius: var(--arrowpanel-menuitem-border-radius) !important; 
+}

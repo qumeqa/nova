@@ -1,2 +1,2 @@
-# nova
-A modern interface theme with improved styling and visual enhancements
+# Nova UI (Work in Progress)
+A modern interface theme with improved styling and visual enhancements. Based on the standard Zen theme. Recommended to use with the “New icons”, “Floating Findbar” and “Floating Statusbar” mods

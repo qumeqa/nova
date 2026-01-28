@@ -1,0 +1,86 @@
+#full-page-translations-panel-multiview {
+    padding: var(--m) !important;
+    margin: 0 !important;
+}
+
+.translations-panel-view {
+    width: 28em !important;
+}
+
+.translations-panel-content {
+    padding: var(--m) 0 !important;
+    margin: 0 !important;
+    padding-top: calc(var(--m) - var(--xs)) !important;
+}
+
+.translations-panel-header {
+    min-height: 24px !important;
+}
+
+.panel-info-button {
+    background-color: transparent !important;
+}
+
+#full-page-translations-panel-lang-selection {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto auto !important;
+    gap: var(--s) 0 !important;
+
+    label[hidden], menulist[hidden] {
+        display: flex !important;
+    }
+}
+
+#full-page-translations-panel-from-label,
+#full-page-translations-panel-to-label {
+    margin: 0 !important;
+    color: var(--text-color-deemphasized);
+}
+
+#full-page-translations-panel-from-label {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+}
+
+#full-page-translations-panel-to-label {
+    position: relative;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+}
+
+#full-page-translations-panel-to,
+#full-page-translations-panel-from {
+    padding: var(--dd) !important;
+    margin: 0 !important;
+}
+
+#full-page-translations-panel-from {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+#full-page-translations-panel-to {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    border-left: 1px solid var(--panel-separator-color) !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
+.translations-panel-footer {
+    gap: var(--s) !important;
+    /* padding-top: var(--m); */
+    margin: 0 !important;
+}
+
+#full-page-translations-panel-cancel {
+    display: none !important;
+}
+
+.footer-button {
+    padding: var(--btn-b) !important;
+    margin: 0 !important;
+}

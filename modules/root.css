@@ -1,0 +1,13 @@
+:root {
+    --btn-s: 4px 8px;
+    --btn: 8px 16px;
+    --btn-b: 12px 24px;
+    --dd: 12px 16px;
+
+    --xxs: 2px;
+    --xs: 4px;
+    --s: 8px;
+    --m: 16px;
+
+    --data-icon: 44px;
+}

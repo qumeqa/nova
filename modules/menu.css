@@ -1,0 +1,24 @@
+#context-navigation {
+    margin: 0 var(--s) !important;
+    gap: var(--s);
+    border-radius: var(--button-border-radius) !important;
+    margin-bottom: var(--s) !important;
+
+    .menuitem-iconic {
+        background: color-mix(in srgb, currentColor 6%, transparent) !important;
+        padding: var(--s) !important;
+        border-radius: var(--button-border-radius) !important;
+
+        &:hover {
+            background: color-mix(
+                in srgb,
+                currentColor 10%,
+                transparent
+            ) !important;
+        }
+    }
+}
+
+#context-sep-navigation {
+    display: none !important;
+}

@@ -1,0 +1,150 @@
+#zen-unified-site-data-panel {
+    panelmultiview {
+        margin: var(--m) !important;
+    }
+}
+
+.panel-viewcontainer,
+.panel-viewstack,
+#unified-extensions-view {
+    width: 100% !important;
+}
+
+#zen-site-data-header,
+#zen-site-data-section-addons,
+.zen-site-data-section,
+.zen-site-data-section-header,
+#zen-site-data-settings-list,
+#zen-site-data-footer {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+#zen-site-data-header {
+    gap: var(--s) !important;
+
+    & toolbarbutton {
+        width: var(--data-icon) !important;
+        height: var(--data-icon) !important;
+        border-radius: var(--button-border-radius) !important;
+        transform: initial !important;
+        transition: all 0s !important;
+        background: color-mix(in srgb, currentColor 6%, transparent) !important;
+
+        &:hover {
+            background-color: color-mix(
+                in srgb,
+                currentColor 10%,
+                transparent
+            ) !important;
+        }
+
+        &::before {
+            display: none !important;
+        }
+
+        &.active {
+            color: var(--button-primary-color) !important;
+            background: var(--button-background-color-primary) !important;
+
+            image {
+                opacity: 0.9 !important;
+            }
+        }
+
+        &:active:hover::before {
+            transform: initial !important;
+        }
+    }
+}
+
+.zen-site-data-section-header {
+    padding: var(--m) 0 var(--s) !important;
+}
+
+#zen-site-data-addons {
+    gap: var(--s) !important;
+
+    #overflowed-extensions-list,
+    #unified-extensions-area,
+    .unified-extensions-list,
+    #zen-site-data-new-addon-button-container {
+        & > * {
+            width: var(--data-icon) !important;
+            height: var(--data-icon) !important;
+            border-radius: var(--button-border-radius) !important;
+            transform: initial !important;
+            transition: all 0s !important;
+            background: color-mix(
+                in srgb,
+                currentColor 6%,
+                transparent
+            ) !important;
+
+            &:hover {
+                background-color: color-mix(
+                    in srgb,
+                    currentColor 10%,
+                    transparent
+                ) !important;
+            }
+        }
+    }
+}
+
+.permission-popup-permission-item,
+#permission-popup-storage-access-permission-list-header {
+    padding: 0 !important;
+}
+
+.permission-popup-permission-icon {
+    width: 34px !important;
+    height: 34px !important;
+
+    &::before {
+        border-radius: var(--button-border-radius) !important;
+        width: 32px !important;
+        height: 32px !important;
+    }
+}
+
+#zen-site-data-settings-list {
+    gap: var(--s) !important;
+
+    toolbarseparator {
+        display: none !important;
+    }
+
+    image {
+        opacity: 0.9 !important;
+    }
+}
+
+#zen-site-data-footer {
+    gap: var(--xs) !important;
+    justify-content: space-between;
+}
+
+#zen-site-data-security-info {
+    list-style-image: none !important;
+
+    & .toolbarbutton-icon {
+        width: 0 !important;
+    }
+}
+
+#zen-site-data-footer {
+    border-top: none !important;
+    padding-top: var(--m) !important;
+
+    #zen-site-data-actions {
+        width: 34px !important;
+        height: 34px !important;
+    }
+}
+
+.zen-interactive-button {
+    transition: all 0s !important;
+    border-radius: var(--button-border-radius) !important;
+}
