@@ -42,7 +42,7 @@ For the best experience, use Nova UI together with:
 - **Website Information** — Improved website information popup styling
 - **New Tab** — Improved new tab popup styling
 
-### Install Nova UI
+## ✅ Installing
 
 > [!IMPORTANT]
 > Before installing Nova UI, you must first install [Sine](https://github.com/CosmoCreeper/Sine), a mod/theme manager for Firefox-based browsers
