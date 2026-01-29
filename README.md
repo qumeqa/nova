@@ -49,4 +49,4 @@ For the best experience, use Nova UI together with:
 
 ### Install Nova UI
 
-Once Sine is installed, you can install Nova UI through the Sine marketplace or manually copy the mod files to your Firefox profile's `chrome/` folder
+Once Sine is installed, you can install Nova UI through the Sine marketplace
