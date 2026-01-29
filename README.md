@@ -37,10 +37,9 @@ For the best experience, use Nova UI together with:
 
 ## 🚀 Future Plans
 
-- **Theme Settings** — Improved theme settings styling
-- **Downloads** — Improved download manager styling
 - **Website Information** — Improved website information popup styling
 - **New Tab** — Improved new tab popup styling
+- **Tabs** — Improved tabs styling
 
 ## ✅ Installing
 
