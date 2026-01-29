@@ -3,7 +3,9 @@
 A styling enhancement for the Zen browser theme. Nova improves the visual consistency of the Zen theme by adjusting spacing, padding, borders, and overall layout
 
 ![Nova UI Theme](https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/img/cover.jpg)
-> *Screenshot with "New Icons" mod*
+
+> [!NOTE]
+> Screenshot with "New Icons" mod
 
 ## ✨ About
 
@@ -38,7 +40,7 @@ For the best experience, use Nova UI together with:
 - **Website Information** — Improved website information popup styling
 - **New Tab** — Improved new tab popup styling
 
-## 📝 Installation
+### Install Nova UI
 
 > [!IMPORTANT]
 > Before installing Nova UI, you must first install [Sine](https://github.com/CosmoCreeper/Sine), a mod/theme manager for Firefox-based browsers
@@ -46,5 +48,3 @@ For the best experience, use Nova UI together with:
 ### Install Nova UI
 
 Once Sine is installed, you can install Nova UI through the Sine marketplace or manually copy the mod files to your Firefox profile's `chrome/` folder
-<br><br>
-Work in Progress — Actively developed and improved!
