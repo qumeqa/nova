@@ -3,10 +3,11 @@
 A styling enhancement for the Zen browser theme. Nova improves the visual consistency of the Zen theme by adjusting spacing, padding, borders, and overall layout
 
 ![Nova UI Theme](https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/img/cover.jpg)
+> *Screenshot with "New Icons" mod*
 
 ## ✨ About
 
-Nova UI is a mod that refines the Zen theme. It standardizes spacing, adjusts padding for UI elements, and improves the visual consistency of popups, tabs, menus, and panels. The mod maintains the Zen theme's original functionality while providing a more unified visual presentation
+Nova UI is a mod that refines the Zesn theme. It standardizes spacing, adjusts padding for UI elements, and improves the visual consistency of popups, tabs, menus, and panels. The mod maintains the Zen theme's original functionality while providing a more unified visual presentation
 
 ## 🔮 What It Changes
 
