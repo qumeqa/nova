@@ -2,12 +2,12 @@
     panelmultiview {
         margin: var(--m) !important;
     }
-}
 
-.panel-viewcontainer,
-.panel-viewstack,
-#unified-extensions-view {
-    width: 100% !important;
+    .panel-viewcontainer,
+    .panel-viewstack,
+    #unified-extensions-view {
+        width: 100% !important;
+    }
 }
 
 #zen-site-data-header,
@@ -25,8 +25,8 @@
     gap: var(--s) !important;
 
     & toolbarbutton {
-        width: var(--data-icon) !important;
-        height: var(--data-icon) !important;
+        width: var(--di-w) !important;
+        height: var(--di-h) !important;
         border-radius: var(--button-border-radius) !important;
         transform: initial !important;
         transition: all 0s !important;
@@ -71,8 +71,8 @@
     .unified-extensions-list,
     #zen-site-data-new-addon-button-container {
         & > * {
-            width: var(--data-icon) !important;
-            height: var(--data-icon) !important;
+            width: var(--di-w) !important;
+            height: var(--di-h) !important;
             border-radius: var(--button-border-radius) !important;
             transform: initial !important;
             transition: all 0s !important;

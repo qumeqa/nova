@@ -92,6 +92,7 @@ panelview .toolbarbutton-1,
     margin: 0 var(--s) !important;
     padding: var(--s) !important;
     border-radius: var(--button-border-radius) !important;
+    background: none !important;
 }
 
 .panel-subview-body {
@@ -146,23 +147,12 @@ menuitem {
     }
 }
 
-/* :is(
-    .menuitem-iconic,
-    .menu-iconic,
-    .subviewbutton-iconic,
-    .unified-nav-current,
-    .menuitem-with-favicon,
-    #appMenu-fxa-label2
-):not(menupopup[needsgutter] > *) label {
-    margin-left: var(--s) !important;
-} */
-
-:is(.subviewbutton-iconic):not(menupopup[needsgutter] > *) label {
-    margin-left: var(--s) !important;
+.menu-icon {
+  margin-top: 0 !important;
 }
 
-:is(#appMenu-fxa-label2):not(menupopup[needsgutter] > *) label {
-    margin-left: var(--xs) !important;
+:is(.subviewbutton-iconic, #appMenu-fxa-label2):not(menupopup[needsgutter] > *) label {
+    margin-left: var(--s) !important;
 }
 
 menuitem[badge]::after {
@@ -210,6 +200,10 @@ menuitem[badge]::after {
     }
 }
 
-#widget-overflow-list .toolbarbutton-icon {
+#widget-overflow-list .toolbarbutton-icon,
+#zenCreateNewPopup .menu-icon,
+#appMenu-library-bookmarks-button .toolbarbutton-icon,
+#appMenu-library-history-button .toolbarbutton-icon,
+#appMenu-library-downloads-button .toolbarbutton-icon {
     display: none !important;
 }

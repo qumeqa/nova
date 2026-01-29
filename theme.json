@@ -3,14 +3,14 @@
   "homepage": "https://github.com/qumeqa/nova",
   "author": "qumeqa",
   "name": "Nova UI",
-  "description": "A modern interface theme with improved styling and visual enhancements, based on the standard Zen theme",
-  "version": "1.0",
+  "description": "A Zen theme enhancement that refines spacing, padding, and visual consistency across the interface",
+  "version": "1.1",
   "style": {
     "chrome": "userChrome.css"
   },
   "preferences": "preferences.json",
   "readme": "https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/README.md",
-  "image": "https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/cover.png",
+  "image": "https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/img/cover.jpg",
   "tags": [
     "modern",
     "ui",

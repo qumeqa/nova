@@ -3,6 +3,11 @@
     panel {
         --panel-border-color: var(--panel-separator-color) !important;
     }
+
+    /* mod support */
+    #statuspanel-label, findbar {
+        border: 1px solid var(--panel-separator-color) !important;
+    }
 }
 
 @media (-moz-pref("nova-enable-corner-fix")) {
