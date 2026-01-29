@@ -78,6 +78,10 @@ panelview .toolbarbutton-1,
     }
 }
 
+#appmenu-fxa-sync-and-save-data2 {
+    padding-inline-start: var(--m) !important;
+}
+
 #PanelUI-fxa .panel-header h1 {
     padding-bottom: var(--xs) !important;
 }
@@ -92,7 +96,6 @@ panelview .toolbarbutton-1,
     margin: 0 var(--s) !important;
     padding: var(--s) !important;
     border-radius: var(--button-border-radius) !important;
-    background: none !important;
 }
 
 .panel-subview-body {

@@ -9,4 +9,6 @@
 @import "modules/urlbar.css";
 @import "modules/findbar.css";
 @import "modules/statusbar.css";
+@import "modules/downloads.css";
+@import "modules/theme.css";
 @import "modules/preferences.css";

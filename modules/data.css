@@ -126,7 +126,7 @@
     justify-content: space-between;
 }
 
-#zen-site-data-security-info {
+#zen-site-data-security-info, #identity-popup-security-button {
     list-style-image: none !important;
 
     & .toolbarbutton-icon {
@@ -147,4 +147,8 @@
 .zen-interactive-button {
     transition: all 0s !important;
     border-radius: var(--button-border-radius) !important;
+}
+
+#identity-popup-mainView-panel-header {
+    padding-left: var(--m) !important;
 }

@@ -1,17 +1,20 @@
 @media (-moz-pref("nova-enable-border")) {
+
     menupopup,
     panel {
         --panel-border-color: var(--panel-separator-color) !important;
     }
 
     /* mod support */
-    #statuspanel-label, findbar {
+    #statuspanel-label,
+    findbar {
         border: 1px solid var(--panel-separator-color) !important;
     }
 }
 
 @media (-moz-pref("nova-enable-corner-fix")) {
     html:not([sizemode="fullscreen"]) {
+
         .browserStack,
         browser {
             clip-path: inset(0 round var(--zen-native-inner-radius));
@@ -84,14 +87,12 @@
     }
 
     @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
-        .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]):hover
-            img {
+        .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]):hover img {
             opacity: 1 !important;
             transition: opacity 0.1s ease-out !important;
         }
 
-        .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]):hover
-            .tab-icon-overlay {
+        .tabbrowser-tab:is([soundplaying], [muted], [activemedia-blocked]):hover .tab-icon-overlay {
             margin: 0px !important;
             transition:
                 opacity 0.1s ease-out,
