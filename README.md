@@ -32,9 +32,10 @@ For the best experience, use Nova UI together with:
 
 ## 🚀 Future Plans
 
-- **Popup Theme Settings** — Improved theme settings styling
-- **Downloads** — Improved download manager styling with progress bars and extended options
-- **Website Information** — Improved website information styling
+- **Theme Settings** — Improved theme settings styling
+- **Downloads** — Improved download manager styling
+- **Website Information** — Improved website information popup styling
+- **New Tab** — Improved new tab popup styling
 
 ## 📝 Installation
 
@@ -44,7 +45,5 @@ For the best experience, use Nova UI together with:
 ### Install Nova UI
 
 Once Sine is installed, you can install Nova UI through the Sine marketplace or manually copy the mod files to your Firefox profile's `chrome/` folder
-
-
-> [!NOTE]
-> Work in Progress — Actively developed and improved
+<br><br>
+Work in Progress — Actively developed and improved!
