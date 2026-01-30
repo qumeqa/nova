@@ -117,8 +117,6 @@
     }
 }
 
-/* как идея потом добавить firefox style кнопки с отступами и закруглениями */
-
 @media (-moz-pref("nova-enable-quietify")) {
     .tabbrowser-tab img {
         transition: opacity 0.3s ease-in-out;
