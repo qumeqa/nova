@@ -21,7 +21,7 @@
         "type": "checkbox",
         "property": "nova-enable-quietify",
         "label": "Add a calm visualizer type of animation to mute button to use with style and ease (Quietify mode integration)",
-        "defaultValue": false
+        "defaultValue": true
     },
     {
         "type": "checkbox",

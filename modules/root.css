@@ -14,5 +14,4 @@
     --di-h: 44px;
 
     --zen-sidebar-notification-shadow: none !important;
-    --zen-toolbar-element-bg: light-dark(color-mix(in oklch, var(--toolbox-textcolor) 5%, transparent), color-mix(in oklch, var(--toolbox-textcolor) 10%, transparent)) !important;
 }
