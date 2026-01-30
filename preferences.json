@@ -8,7 +8,7 @@
     {
         "type": "checkbox",
         "property": "nova-enable-new-tabs",
-        "label": "New Essentials background colors",
+        "label": "New Essentials background colors (experemental)",
         "defaultValue": true
     },
     {
@@ -26,7 +26,7 @@
     {
         "type": "checkbox",
         "property": "nova-custom-font",
-        "label": "Custom font",
+        "label": "Custom font (experemental)",
         "defaultValue": false
     },
     {
