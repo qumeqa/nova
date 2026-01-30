@@ -5,10 +5,5 @@
 @import "modules/menu.css";
 @import "modules/translate.css";
 @import "modules/data.css";
-@import "modules/screenshot.css";
-@import "modules/urlbar.css";
-@import "modules/findbar.css";
-@import "modules/statusbar.css";
-@import "modules/downloads.css";
-@import "modules/theme.css";
+@import "modules/other.css";
 @import "modules/preferences.css";

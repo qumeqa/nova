@@ -7,6 +7,12 @@
     },
     {
         "type": "checkbox",
+        "property": "nova-enable-new-tabs",
+        "label": "New tabs colors",
+        "defaultValue": true
+    },
+    {
+        "type": "checkbox",
         "property": "nova-enable-corner-fix",
         "label": "Fix the white outlines on the rounded corners (Bleeding Corners Fix mode integration)",
         "defaultValue": true

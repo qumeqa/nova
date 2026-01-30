@@ -6,7 +6,7 @@ panel {
 }
 
 * {
-    scrollbar-color: #80808060 var(--button-background-color) !important;
+    scrollbar-color: #80808060 var(--arrowpanel-background) !important;
 }
 
 .subview-subheader,
@@ -144,9 +144,7 @@ menuitem {
     }
 
     &:where([_moz-menuactive][disabled="true"]) {
-        background-color: var(
-            --button-background-color-ghost-disabled
-        ) !important;
+        background-color: var(--button-background-color-ghost-disabled) !important;
     }
 }
 

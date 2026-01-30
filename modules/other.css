@@ -1,0 +1,177 @@
+/* bookmarks */
+
+#PersonalToolbar {
+    padding: 0 !important;
+}
+
+#zen-main-app-wrapper[zen-compact-mode="true"] {
+    #PersonalToolbar {
+        padding: 0 var(--xs) !important;
+    }
+}
+
+#PlacesToolbarItems .bookmark-item {
+    margin: 0 !important;
+    padding: 0 var(--s) !important;
+    height: 26px !important;
+
+    .toolbar-menupopup .bookmark-item {
+        padding: var(--btn) !important;
+        height: max-content !important;
+    }
+}
+
+/* screenshot */
+
+.screenshot-button {
+    background-image: none !important;
+    text-wrap: nowrap !important;
+    outline: none !important;
+}
+
+/* site */
+
+:root:not([inDOMFullscreen="true"]):not([chromehidden~="location"]):not([chromehidden~="toolbar"]) {
+    & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+        :root:not([zen-no-padding="true"]) &:not(.zen-glance-overlay) {
+            box-shadow: none !important;
+        }
+    }
+}
+
+/* menu */
+
+#context-navigation {
+    margin: var(--s) var(--m) !important;
+    gap: var(--s);
+
+    .menuitem-iconic {
+        background: color-mix(in srgb, currentColor 6%, transparent) !important;
+        padding: var(--xs) var(--s) !important;
+        border-radius: var(--button-border-radius) !important;
+
+        &:hover {
+            background: color-mix(in srgb,
+                    currentColor 10%,
+                    transparent) !important;
+        }
+    }
+}
+
+/* statusbar */
+
+#statuspanel {
+    margin: 10px !important;
+}
+
+#statuspanel-label {
+    border-radius: 100px !important;
+    padding: 6px 12px !important;
+    border: none !important;
+    background: var(--arrowpanel-background) !important;
+}
+
+/* downloads */
+
+#downloadsPanel-mainView {
+    padding: 0 !important;
+
+    richlistitem {
+        margin: 0 !important;
+        padding: 0 var(--s) !important;
+        border-radius: 0 !important;
+    }
+
+    description {
+        margin-block: 0 !important
+    }
+}
+
+.downloadButton {
+    width: 34px !important;
+    height: 34px !important;
+    border: none !important;
+}
+
+#emptyDownloads {
+    padding: var(--m) !important;
+    color: var(--text-color-deemphasized) !important;
+}
+
+/* tabs */
+
+.workspace-arrowscrollbox,
+#tabbrowser-arrowscrollbox {
+    padding: 0 !important;
+}
+
+zen-workspace-icons .subviewbutton {
+    padding: 3px !important;
+    border-radius: var(--arrowpanel-menuitem-border-radius) !important;
+}
+
+#tabbrowser-tabs {
+        --tab-selected-shadow: none !important;
+}
+
+#zen-main-app-wrapper[zen-compact-mode="true"] {
+    #titlebar {
+        background: var(--zen-main-browser-background-titlebar) !important;
+        border: none !important;
+
+        .zen-toolbar-background {
+            box-shadow: none !important;
+
+            &::before,
+            &::after {
+                outline: none !important;
+            }
+
+            &,
+            &::before,
+            &::after {
+                border-radius: calc(var(--zen-native-inner-radius) - var(--zen-compact-mode-no-padding-radius-fix, 4px)) !important;
+            }
+        }
+
+    }
+}
+
+
+#main-window[zen-default-theme="true"] {
+    #titlebar {
+        background: var(--zen-main-browser-background) !important;
+    }
+}
+
+/* :root[zen-compact-mode="true"]:not([customizing]):not([inDOMFullscreen="true"]) {
+    @media -moz-pref("zen.view.compact.hide-tabbar") or -moz-pref("zen.view.use-single-toolbar") {
+        &:not([zen-compact-animating]) {
+            & #navigator-toolbox {
+                &:not([animate="true"]) {
+                    transition: left 0.3s ease, right 0.3s ease, visibility 0.3s ease !important;
+                }
+            }
+        }
+    }
+} */
+
+/* themes */
+
+#PanelUI-zen-gradient-generator-multiview {
+    margin: 0 !important;
+}
+
+#PanelUI-zen-gradient-generator-color-actions,
+#PanelUI-zen-gradient-generator-scheme {
+    & button {
+        display: flex !important;
+        justify-content: center !important;
+        border-radius: var(--button-border-radius) !important;
+    }
+}
+
+#PanelUI-zen-gradient-generator-color-page-left,
+#PanelUI-zen-gradient-generator-color-page-right {
+    border-radius: var(--button-border-radius) !important;
+}
