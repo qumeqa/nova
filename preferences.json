@@ -8,7 +8,7 @@
     {
         "type": "checkbox",
         "property": "nova-enable-new-tabs",
-        "label": "New tabs colors",
+        "label": "New Essentials background colors",
         "defaultValue": true
     },
     {

@@ -1,0 +1,36 @@
+#urlbar {
+    .urlbar-background {
+        /* background: var(--arrowpanel-background) !important; */
+        outline: none !important;
+    }
+    
+    .urlbarView {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .urlbarView-row {
+        border-radius: 0 !important;
+        padding: 0 !important;
+
+        &:active {
+                background: var(--button-background-color-ghost-active) !important;
+            }
+    }
+
+    .urlbarView-row-inner {
+        padding-left: var(--m) !important;
+    }
+
+    .urlbarView-favicon {
+        background: none !important;
+    }
+
+    #identity-box[pageproxystate="invalid"] {
+        margin-inline-end: var(--s) !important;
+    }
+
+    #identity-icon-box {
+        background: none !important;
+    }
+}

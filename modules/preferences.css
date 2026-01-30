@@ -10,6 +10,12 @@
     findbar {
         border: 1px solid var(--panel-separator-color) !important;
     }
+
+    #urlbar[zen-newtab="true"] {
+        .urlbar-background {
+            border: 1px solid var(--panel-separator-color) !important;
+        }
+    }
 }
 
 /* @media (-moz-pref("nova-enable-new-tabs")) {

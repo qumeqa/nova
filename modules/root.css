@@ -8,10 +8,11 @@
     --xs: 4px;
     --s: 8px;
     --m: 16px;
-    --b: 32px
+    --l: 32px
 
     --di-w: 44px;
     --di-h: 44px;
 
     --zen-sidebar-notification-shadow: none !important;
+    --zen-toolbar-element-bg: light-dark(color-mix(in oklch, var(--toolbox-textcolor) 12%, transparent), color-mix(in oklch, var(--toolbox-textcolor) 12%, transparent)) !important;
 }
