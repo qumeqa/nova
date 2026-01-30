@@ -2,7 +2,7 @@
 
 A styling enhancement for the Zen browser theme. Nova improves the visual consistency of the Zen theme by adjusting spacing, padding, borders, and overall layout
 
-![Nova UI Theme](https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/img/cover.jpg)
+![Nova UI Theme](https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/img/main.jpg)
 
 > [!NOTE]
 > Screenshot with "New Icons" mod
