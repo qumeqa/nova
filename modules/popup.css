@@ -6,7 +6,7 @@ panel {
 }
 
 * {
-    scrollbar-color: #80808060 var(--arrowpanel-background) !important;
+    scrollbar-color: #80808060 transparent !important;
 }
 
 .subview-subheader,
