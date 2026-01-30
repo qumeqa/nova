@@ -21,23 +21,26 @@
     width: 100% !important;
 }
 
+.zen-site-data-section-header {
+    padding: var(--m) 0 var(--s) !important;
+}
+
 #zen-site-data-header {
     gap: var(--s) !important;
 
     & toolbarbutton {
-        width: var(--di-w) !important;
-        height: var(--di-h) !important;
+        width: calc((100% - var(--s) * 3) / 4) !important;
+        aspect-ratio: 6 / 5 !important;
+        height: auto !important;
         border-radius: var(--button-border-radius) !important;
         transform: initial !important;
         transition: all 0s !important;
         background: color-mix(in srgb, currentColor 6%, transparent) !important;
 
         &:hover {
-            background-color: color-mix(
-                in srgb,
-                currentColor 10%,
-                transparent
-            ) !important;
+            background-color: color-mix(in srgb,
+                    currentColor 10%,
+                    transparent) !important;
         }
 
         &::before {
@@ -59,10 +62,6 @@
     }
 }
 
-.zen-site-data-section-header {
-    padding: var(--m) 0 var(--s) !important;
-}
-
 #zen-site-data-addons {
     gap: var(--s) !important;
 
@@ -70,24 +69,21 @@
     #unified-extensions-area,
     .unified-extensions-list,
     #zen-site-data-new-addon-button-container {
-        & > * {
-            width: var(--di-w) !important;
-            height: var(--di-h) !important;
-            border-radius: var(--button-border-radius) !important;
+        &>* {
+            width: calc((100% - var(--s) * 3) / 4) !important;
+            aspect-ratio: 6 / 5 !important;
+            height: auto !important;
             transform: initial !important;
+            border-radius: var(--button-border-radius) !important;
             transition: all 0s !important;
-            background: color-mix(
-                in srgb,
-                currentColor 6%,
-                transparent
-            ) !important;
+            background: color-mix(in srgb,
+                    currentColor 6%,
+                    transparent) !important;
 
             &:hover {
-                background-color: color-mix(
-                    in srgb,
-                    currentColor 10%,
-                    transparent
-                ) !important;
+                background-color: color-mix(in srgb,
+                        currentColor 10%,
+                        transparent) !important;
             }
         }
     }
