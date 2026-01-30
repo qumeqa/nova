@@ -6,7 +6,7 @@ panel {
 }
 
 * {
-    scrollbar-color: color-mix(in srgb, currentColor 15%, transparent) transparent !important;
+    scrollbar-color: color-mix(in srgb, currentColor 20%, transparent) transparent !important;
 }
 
 .subview-subheader,
