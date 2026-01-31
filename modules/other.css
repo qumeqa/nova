@@ -206,7 +206,7 @@ zen-workspace-icons .subviewbutton {
 /* themes */
 
 #PanelUI-zen-gradient-generator-multiview {
-    margin: 0 !important;
+    margin: var(--s) !important;
 }
 
 #PanelUI-zen-gradient-generator-color-actions,
