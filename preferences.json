@@ -1,5 +1,11 @@
 [
     {
+        "type": "text",
+        "label": "General",
+        "margin": "20px 0 10px 0",
+        "size": "20px"
+    },
+    {
         "type": "checkbox",
         "property": "nova-enable-border",
         "label": "Enable border (appears around all pop-ups and panels)",
@@ -7,8 +13,14 @@
     },
     {
         "type": "checkbox",
-        "property": "nova-firefox-like-tabs",
-        "label": "Test",
+        "property": "nova-site-remove-shadow",
+        "label": "Remove shadow from site window",
+        "defaultValue": true
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-tabs-remove-shadow",
+        "label": "Remove shadow from tabs",
         "defaultValue": true
     },
     {
@@ -18,16 +30,28 @@
         "defaultValue": true
     },
     {
+        "type": "text",
+        "label": "Mods",
+        "margin": "20px 0 10px 0",
+        "size": "20px"
+    },
+    {
         "type": "checkbox",
         "property": "nova-enable-corner-fix",
-        "label": "Fix the white outlines on the rounded corners (Bleeding Corners Fix mode integration)",
+        "label": "Bleeding Corners Fix (fix the white outlines on the rounded corners)",
         "defaultValue": true
     },
     {
         "type": "checkbox",
         "property": "nova-enable-quietify",
-        "label": "Add a calm visualizer type of animation to mute button to use with style and ease (Quietify mode integration)",
+        "label": "Quietify (add a calm visualizer type of animation to mute button to use with style and ease)",
         "defaultValue": true
+    },
+    {
+        "type": "text",
+        "label": "Not recomended for use",
+        "margin": "20px 0 10px 0",
+        "size": "20px"
     },
     {
         "type": "checkbox",
@@ -40,5 +64,11 @@
         "label": "Custom font family:",
         "type": "string",
         "placeholder": "Vela Sans, sans-serif"
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-firefox-like-buttons",
+        "label": "Firefox-like buttons (doesn't work)",
+        "defaultValue": true
     }
 ]
