@@ -6,3 +6,7 @@
 #zen-workspaces-button {
     gap: 0 !important;
 }
+
+:root:not([zen-single-toolbar="true"]):not([zen-has-empty-tab="true"]) #urlbar:not([breakout-extend="true"]) .urlbar-input-container {
+    padding: 2px !important;
+}

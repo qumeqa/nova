@@ -2,7 +2,7 @@
     {
         "type": "text",
         "label": "General",
-        "margin": "20px 0 10px 0",
+        "margin": "30px 0 15px 0",
         "size": "20px"
     },
     {
@@ -30,9 +30,27 @@
         "defaultValue": true
     },
     {
+        "type": "checkbox",
+        "property": "nova-custom-border-radius",
+        "label": "Larger border radius (experemental)",
+        "defaultValue": false
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-custom-font",
+        "label": "Custom font (experemental)",
+        "defaultValue": false
+    },
+    {
+        "property": "nova-custom-font-text",
+        "label": "Custom font family:",
+        "type": "string",
+        "placeholder": "Vela Sans"
+    },
+    {
         "type": "text",
         "label": "Mods",
-        "margin": "20px 0 10px 0",
+        "margin": "30px 0 15px 0",
         "size": "20px"
     },
     {
@@ -49,26 +67,80 @@
     },
     {
         "type": "text",
-        "label": "Not recomended for use",
-        "margin": "20px 0 10px 0",
+        "label": "Hide popup buttons",
+        "margin": "30px 0 15px 0",
         "size": "20px"
     },
     {
         "type": "checkbox",
-        "property": "nova-custom-font",
-        "label": "Custom font (experemental)",
-        "defaultValue": false
-    },
-    {
-        "property": "nova-custom-font-text",
-        "label": "Custom font family:",
-        "type": "string",
-        "placeholder": "Vela Sans, sans-serif"
+        "property": "nova-popup-tab",
+        "label": "New Tab Below",
+        "defaultValue": true
     },
     {
         "type": "checkbox",
-        "property": "nova-firefox-like-buttons",
-        "label": "Firefox-like buttons (doesn't work)",
+        "property": "nova-popup-folder",
+        "label": "New Folder",
+        "defaultValue": true
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-popup-rename",
+        "label": "Change Label",
+        "defaultValue": true
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-popup-icon",
+        "label": "Change Icon",
+        "defaultValue": true
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-popup-share",
+        "label": "Share",
+        "defaultValue": true
+    },
+    {
+        "type": "text",
+        "label": "Hide toolbar menu buttons",
+        "margin": "30px 0 15px 0",
+        "size": "20px"
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-toolbar-folder",
+        "label": "New Folder",
+        "defaultValue": true
+    },
+    {
+        "type": "text",
+        "label": "Hide app menu buttons",
+        "margin": "30px 0 15px 0",
+        "size": "20px"
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-appmenu-print",
+        "label": "Print",
+        "defaultValue": true
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-appmenu-save",
+        "label": "Save page as",
+        "defaultValue": true
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-appmenu-help",
+        "label": "Help",
+        "defaultValue": true
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-appmenu-report",
+        "label": "Report broken site",
         "defaultValue": true
     }
 ]

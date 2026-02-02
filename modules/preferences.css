@@ -39,10 +39,6 @@
     }
 }
 
-@media (-moz-pref("nova-firefox-like-buttons")) {
-    
-}
-
 @media (-moz-pref("nova-enable-new-tabs")) {
 
     .tabbrowser-tab[zen-essential="true"],
@@ -74,13 +70,206 @@
     }
 }
 
-@media (-moz-pref("nova-enable-corner-fix")) {
-    html:not([sizemode="fullscreen"]) {
+@media (-moz-bool-pref: "nova-custom-font") {
+    *:not(.titlebar-buttonbox-container *) {
+        font-family: var(--nova-custom-font-text) !important;
+    }
+}
 
-        .browserStack,
-        browser {
-            clip-path: inset(0 round var(--zen-native-inner-radius));
+@media (-moz-bool-pref: "nova-custom-border-radius") {
+    :root {
+            --border-radius-xsmall: 4px !important;
+            --border-radius-small: 8px !important;
+            --border-radius-large: 32px !important;
+            --button-border-radius: var(--border-radius-medium) !important;
+            --border-radius-medium: 16px !important;
+
+            --button-border-radius: var(--border-radius-small) !important;
+            --urlbar-icon-border-radius: var(--border-radius-medium) !important;
+            --arrowpanel-menuitem-border-radius: var(--border-radius-small) !important;
         }
+    
+        menupopup,
+        panel {
+            --panel-border-radius: 12px !important;
+        }
+    
+        #navigator-toolbox {
+            --border-radius-medium: 12px !important;
+            --tab-border-radius: var(--border-radius-small) !important;
+        }
+    
+        .toolbarbutton-1:not(#tabs-newtab-button) {
+            --tab-border-radius: var(--border-radius-small) !important;
+        }
+}
+
+/* @media (-moz-pref("nova-custom-border-radius", 1)) {
+
+    :root {
+        --border-radius-circle: 9999px;
+        --border-radius-xsmall: 2px;
+        --border-radius-small: 4px;
+        --border-radius-large: 16px;
+        --button-border-radius: var(--border-radius-medium);
+        --border-radius-medium: 8px;
+    }
+
+    :root {
+        --border-radius-circle: 0 !important;
+        --border-radius-xsmall: 0 !important;
+        --border-radius-small: 0 !important;
+        --border-radius-large: 0 !important;
+        --border-radius-medium: 0 !important;
+
+        --button-border-radius: var(--border-radius-small) !important;
+        --urlbar-icon-border-radius: 0 !important;
+        --arrowpanel-menuitem-border-radius: 0 !important;
+    }
+
+    menupopup,
+    panel {
+        --panel-border-radius: 0 !important;
+    }
+
+    #navigator-toolbox {
+        --border-radius-medium: 0 !important;
+        --tab-border-radius: 0 !important;
+    }
+
+    .toolbarbutton-1:not(#tabs-newtab-button) {
+        --tab-border-radius: 0 !important;
+    }
+}
+
+@media (-moz-pref("nova-custom-border-radius", 2)) {
+    :root {
+        --border-radius-xsmall: 4px !important;
+        --border-radius-small: 8px !important;
+        --border-radius-large: 20px !important;
+        --border-radius-medium: 12px !important;
+    }
+
+    menupopup,
+    panel {
+        --panel-border-radius: 12px !important;
+    }
+
+    #navigator-toolbox {
+        --border-radius-medium: 12px !important;
+        --tab-border-radius: 12px !important;
+    }
+
+        .toolbarbutton-1:not(#tabs-newtab-button) {
+            --tab-border-radius: 8px !important;
+        }
+}
+
+@media (-moz-pref("nova-custom-border-radius", 3)) {
+
+    menupopup,
+    panel {
+        --panel-border-radius: 16px !important;
+    }
+    
+    #navigator-toolbox {
+        --border-radius-medium: 16px !important;
+        --tab-border-radius: 16px !important;
+    }
+
+        .toolbarbutton-1:not(#tabs-newtab-button) {
+            --tab-border-radius: 16px !important;
+        }
+}
+
+@media (-moz-pref("nova-custom-border-radius", 4)) {
+
+    menupopup,
+    panel {
+        --panel-border-radius: 20px !important;
+    }
+
+    #navigator-toolbox {
+        --border-radius-medium: 24px !important;
+        --tab-border-radius: 20px !important;
+    }
+
+        .toolbarbutton-1:not(#tabs-newtab-button) {
+            --tab-border-radius: 20px !important;
+        }
+} */
+
+@media (-moz-pref("nova-enable-corner-fix")) {
+
+    html:not([sizemode="fullscreen"]) .browserStack,
+    browser {
+        clip-path: inset(0 round var(--zen-native-inner-radius));
+    }
+}
+
+@media (-moz-bool-pref: "nova-popup-tab") {
+    #context_openANewTab {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-popup-folder") {
+
+    #zen-context-menu-new-folder,
+    #mainPopupSet menuseparator:nth-of-type(1) {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-popup-rename") {
+    #context_zen-edit-tab-title {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-popup-icon") {
+
+    #context_zen-edit-tab-icon,
+    #mainPopupSet menuseparator:nth-of-type(3) {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-popup-share") {
+    .share-tab-url-item {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-toolbar-folder") {
+
+    #zen-context-menu-new-folder-toolbar,
+    #customizationMenuSeparator {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-appmenu-print") {
+    #appMenu-print-button2 {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-appmenu-save") {
+    #appMenu-save-file-button2 {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-appmenu-help") {
+    #appMenu-help-button2 {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-appmenu-report") {
+    #appMenu-report-broken-site-button {
+        display: none !important;
     }
 }
 
@@ -157,11 +346,5 @@
 
     .tab-audio-button {
         display: none !important;
-    }
-}
-
-@media (-moz-bool-pref: "nova-custom-font") {
-    *:not(.titlebar-buttonbox-container *) {
-        font-family: var(--nova-custom-font-text) !important;
     }
 }
