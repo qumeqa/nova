@@ -1,0 +1,8 @@
+.dialogBox {
+    border: none !important;
+    outline: none !important;
+}
+
+#zen-workspaces-button {
+    gap: 0 !important;
+}

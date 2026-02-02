@@ -13,6 +13,9 @@
     --di-w: 44px;
     --di-h: 44px;
 
+    --zen-dialog-background: var(--arrowpanel-background) !important;
+    --button-border: none !important;
+
     --zen-sidebar-notification-shadow: none !important;
     --zen-toolbar-element-bg: light-dark(color-mix(in oklch, var(--toolbox-textcolor) 12%, transparent), color-mix(in oklch, var(--toolbox-textcolor) 12%, transparent)) !important;
 }

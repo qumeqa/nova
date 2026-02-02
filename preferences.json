@@ -7,6 +7,12 @@
     },
     {
         "type": "checkbox",
+        "property": "nova-firefox-like-tabs",
+        "label": "Test",
+        "defaultValue": true
+    },
+    {
+        "type": "checkbox",
         "property": "nova-enable-new-tabs",
         "label": "New Essentials background colors (experemental)",
         "defaultValue": true

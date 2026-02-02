@@ -1,5 +1,4 @@
 @media (-moz-pref("nova-enable-border")) {
-
     menupopup,
     panel {
         --panel-border-color: var(--panel-separator-color) !important;
@@ -18,63 +17,7 @@
     }
 }
 
-/* @media (-moz-pref("nova-enable-new-tabs")) {
-    .tabbrowser-tab[zen-essential="true"],
-    #zen-welcome-initial-essentials-browser-sidebar-essentials .tabbrowser-tab {
-        @media -moz-pref("zen.theme.essentials-favicon-bg") {
-            &[visuallyselected]>.tab-stack>.tab-background {
-                &::before {
-                    margin: 0 !important;
-                }
-            }
-        }
-    }
-
-        .tabbrowser-tab[zen-essential="true"],
-        #zen-welcome-initial-essentials-browser-sidebar-essentials .tabbrowser-tab {
-            @media -moz-pref("zen.theme.essentials-favicon-bg") {
-                &[visuallyselected]>.tab-stack>.tab-background {
-                    &::before {
-                        display: none !important;
-                    }
-                }
-            }
-        }
-
-                .tabbrowser-tab[zen-essential="true"],
-                #zen-welcome-initial-essentials-browser-sidebar-essentials .tabbrowser-tab {
-                    @media -moz-pref("zen.theme.essentials-favicon-bg") {
-                        &[visuallyselected]>.tab-stack>.tab-background {
-                            &::after {
-                                content: "";
-                                inset: -50%;
-                                filter: blur(20px);
-                                position: absolute;
-                                background-size: contain;
-                                background-clip: padding-box;
-                                background-image: none !important;
-                                background: var(--zen-essential-tab-selected-bg) !important;
-                                z-index: -1;
-                                background-position: center;
-                                fill: currentColor;
-                                -moz-context-properties: fill, fill-opacity;
-                            }
-                        }
-                    }
-                }
-
-    .tabbrowser-tab[zen-essential="true"],
-    #zen-welcome-initial-essentials-browser-sidebar-essentials .tabbrowser-tab {
-        @media -moz-pref("zen.theme.essentials-favicon-bg") {
-            &[visuallyselected]>.tab-stack>.tab-background {
-                :root[zen-default-theme="true"] & {
-                    --zen-essential-tab-selected-bg: light-dark(rgba(255, 255, 255, 0.85), rgba(65, 65, 65, 0.85)) !important;
-                    --zen-essential-tab-selected-bg-hover: light-dark(rgba(255, 255, 255, 0.6), rgba(65, 65, 65, 0.6)) !important;
-                }
-            }
-        }
-    }
-} */
+@media (-moz-pref("nova-firefox-like-tabs")) {}
 
 @media (-moz-pref("nova-enable-new-tabs")) {
 
