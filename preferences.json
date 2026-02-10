@@ -81,13 +81,13 @@
         "type": "checkbox",
         "property": "nova-popup-folder",
         "label": "New Folder",
-        "defaultValue": true
+        "defaultValue": false
     },
     {
         "type": "checkbox",
         "property": "nova-popup-rename",
         "label": "Change Label",
-        "defaultValue": true
+        "defaultValue": false
     },
     {
         "type": "checkbox",
