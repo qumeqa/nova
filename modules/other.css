@@ -13,12 +13,26 @@
 #PlacesToolbarItems .bookmark-item {
     margin: 0 !important;
     padding: 0 var(--s) !important;
-    height: 26px !important;
+    margin-bottom: 4px !important;
 
     .toolbar-menupopup .bookmark-item {
         padding: var(--btn) !important;
         height: max-content !important;
     }
+}
+
+#zen-appcontent-navbar-wrapper[should-hide="true"] {
+    #PersonalToolbar .bookmark-item {
+        margin: 4px 0 !important;
+    }
+}
+
+#PlacesChevron {
+    margin-block: 4px !important;
+
+    .toolbarbutton-icon {
+            height: 100% !important;
+        }
 }
 
 /* screenshot */
@@ -133,6 +147,10 @@
     #identity-icon-box {
         background: none !important;
     }
+}
+
+#translations-button {
+    height: 100% !important;
 }
 
 /* tabs */
