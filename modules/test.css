@@ -10,3 +10,35 @@
 :root:not([zen-single-toolbar="true"]):not([zen-has-empty-tab="true"]) #urlbar:not([breakout-extend="true"]) .urlbar-input-container {
     padding: 2px !important;
 }
+
+button[part="dialog-button"] {
+    --button-text-color: var(--button-text-color) !important;
+    --button-background-color: var(--button-background-color) !important;
+    color: var(--button-text-color) !important;
+    background: var(--button-background-color) !important;
+
+    &[default="true"],
+    &[default="false"] {
+        color: light-dark(var(--zen-branding-paper), var(--zen-branding-dark)) !important;
+        background: var(--color-accent-primary) !important;
+    }
+}
+
+button[part="dialog-button"]:hover {
+    --button-background-color: color-mix(in srgb, currentColor 5%, transparent) !important;
+
+    &[default="true"],
+    &[default="false"] {
+        background: var(--color-accent-primary-hover) !important;
+    }
+}
+
+button[part="dialog-button"]:hover:active {
+    scale: 0.98;
+    --button-background-color: var(--button-background-color-active) !important;
+
+    &[default="true"],
+    &[default="false"] {
+        background: var(--color-accent-primary-active);
+    }
+}
