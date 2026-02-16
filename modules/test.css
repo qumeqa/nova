@@ -12,7 +12,8 @@
 }
 
 button[part="dialog-button"] {
-    padding: 0.7em 1.4em !important;
+    padding-left: 1.4em !important;
+    padding-right: 1.4em !important;
     --button-text-color: var(--button-text-color) !important;
     --button-background-color: var(--button-background-color) !important;
     color: var(--button-text-color) !important;
@@ -40,7 +41,7 @@ button[part="dialog-button"]:hover {
 
 button[part="dialog-button"]:hover:active {
     scale: 0.98;
-    --button-background-color: var(--button-background-color-active) !important;
+    --button-background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
 
     &[default="true"],
     &[default="false"] {
