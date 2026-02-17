@@ -1,4 +1,4 @@
-# 💜 Nova UI (The description is outdated)
+# 💜 Nova UI (README is outdated)
 
 A styling enhancement for the Zen browser theme. Nova improves the visual consistency of the Zen theme by adjusting spacing, padding, borders, and overall layout
 
