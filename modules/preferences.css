@@ -104,6 +104,37 @@
         }
 }
 
+@media (-moz-bool-pref: "nova-remove-border-radius") {
+    :root {
+        --border-radius-xsmall: none !important;
+        --border-radius-small: none !important;
+        --border-radius-large: none !important;
+        --button-border-radius: none !important;
+        --border-radius-medium: none !important;
+
+        --panel-border-radius: none !important;
+        --tab-border-radius: none !important;
+
+        --button-border-radius: none !important;
+        --urlbar-icon-border-radius: none !important;
+        --arrowpanel-menuitem-border-radius: none !important;
+    }
+
+    menupopup,
+    panel {
+        --panel-border-radius: 0 !important;
+    }
+
+    #navigator-toolbox {
+        --border-radius-medium: 0 !important;
+        --tab-border-radius: 0 !important;
+    }
+
+    .toolbarbutton-1:not(#tabs-newtab-button) {
+        --tab-border-radius: 0 !important;
+    }
+}
+
 /* @media (-moz-pref("nova-custom-border-radius", 1)) {
 
     :root {

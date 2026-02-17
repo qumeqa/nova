@@ -51,19 +51,15 @@ panelview .toolbarbutton-1,
     }
 }
 
-#appMenu-zoom-controls > .toolbarbutton-text,
-#fxa-manage-account-button > vbox,
-#PanelUI-fxa-menu-syncnow-button > hbox {
+#appMenu-zoom-controls>.toolbarbutton-text,
+#fxa-manage-account-button>vbox,
+#PanelUI-fxa-menu-syncnow-button>hbox {
     padding-inline-start: 0 !important;
 }
 
-.widget-overflow-list
-    .toolbarbutton-1:not(.toolbarbutton-combined)
-    > .toolbarbutton-text,
-.subviewbutton:not(#appMenu-zoom-controls > .subviewbutton)
-    > .toolbarbutton-icon
-    + .toolbarbutton-text,
-#appMenu-fxa-label2 > vbox {
+.widget-overflow-list .toolbarbutton-1:not(.toolbarbutton-combined)>.toolbarbutton-text,
+.subviewbutton:not(#appMenu-zoom-controls > .subviewbutton)>.toolbarbutton-icon+.toolbarbutton-text,
+#appMenu-fxa-label2>vbox {
     padding-inline-start: 0 !important;
 }
 
@@ -86,7 +82,7 @@ panelview .toolbarbutton-1,
     padding-bottom: var(--xs) !important;
 }
 
-.panel-header > h1 > span::before {
+.panel-header>h1>span::before {
     --header-image: none !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -149,7 +145,7 @@ menuitem {
 }
 
 .menu-icon {
-  margin-top: 0 !important;
+    margin-top: 0 !important;
 }
 
 :is(.subviewbutton-iconic, #appMenu-fxa-label2):not(menupopup[needsgutter] > *) label {

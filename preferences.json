@@ -37,6 +37,12 @@
     },
     {
         "type": "checkbox",
+        "property": "nova-remove-border-radius",
+        "label": "Remove border radius (experemental)",
+        "defaultValue": false
+    },
+    {
+        "type": "checkbox",
         "property": "nova-custom-font",
         "label": "Custom font (experemental)",
         "defaultValue": false
