@@ -78,30 +78,30 @@
 
 @media (-moz-bool-pref: "nova-custom-border-radius") {
     :root {
-            --border-radius-xsmall: 4px !important;
-            --border-radius-small: 8px !important;
-            --border-radius-large: 32px !important;
-            --button-border-radius: var(--border-radius-medium) !important;
-            --border-radius-medium: 16px !important;
+        --border-radius-xsmall: 4px !important;
+        --border-radius-small: 8px !important;
+        --border-radius-large: 32px !important;
+        --button-border-radius: var(--border-radius-medium) !important;
+        --border-radius-medium: 16px !important;
 
-            --button-border-radius: var(--border-radius-small) !important;
-            --urlbar-icon-border-radius: var(--border-radius-medium) !important;
-            --arrowpanel-menuitem-border-radius: var(--border-radius-small) !important;
-        }
-    
-        menupopup,
-        panel {
-            --panel-border-radius: 12px !important;
-        }
-    
-        #navigator-toolbox {
-            --border-radius-medium: 12px !important;
-            --tab-border-radius: var(--border-radius-small) !important;
-        }
-    
-        .toolbarbutton-1:not(#tabs-newtab-button) {
-            --tab-border-radius: var(--border-radius-small) !important;
-        }
+        --button-border-radius: var(--border-radius-small) !important;
+        --urlbar-icon-border-radius: var(--border-radius-medium) !important;
+        --arrowpanel-menuitem-border-radius: var(--border-radius-small) !important;
+    }
+
+    menupopup,
+    panel {
+        --panel-border-radius: 12px !important;
+    }
+
+    #navigator-toolbox {
+        --border-radius-medium: 12px !important;
+        --tab-border-radius: var(--border-radius-small) !important;
+    }
+
+    .toolbarbutton-1:not(#tabs-newtab-button) {
+        --tab-border-radius: var(--border-radius-small) !important;
+    }
 }
 
 @media (-moz-bool-pref: "nova-remove-border-radius") {
@@ -132,6 +132,14 @@
 
     .toolbarbutton-1:not(#tabs-newtab-button) {
         --tab-border-radius: 0 !important;
+    }
+
+    #urlbar {
+
+        &,
+        .urlbar-background {
+            border-radius: 0 !important;
+        }
     }
 }
 
