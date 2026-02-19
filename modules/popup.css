@@ -1,4 +1,4 @@
-menupopup,
+/* menupopup,
 panel {
     --menuitem-padding: var(--btn) !important;
     --panel-border-radius: var(--s) !important;
@@ -9,9 +9,12 @@ panel {
     scrollbar-color: color-mix(in srgb, currentColor 15%, transparent) transparent !important;
 }
 
-.subview-subheader,
+.subviewbutton {
+    padding: var(--btn) !important;
+    margin: 0 var(--s) !important;
+}
+
 panelview .toolbarbutton-1,
-.subviewbutton,
 .widget-overflow-list .toolbarbutton-1 {
     padding: var(--btn) !important;
     margin: 0 !important;
@@ -20,15 +23,17 @@ panelview .toolbarbutton-1,
 
 #appMenu-fxa-status2 {
     padding: 0 !important;
+    margin: 0 !important;
 
     label {
-        padding-inline-start: var(--s) !important;
+        padding-inline-start: var(--xs) !important;
     }
 }
 
 #appMenu-zoom-controls {
     padding: 0 var(--m) !important;
     padding-top: var(--s) !important;
+    margin: 0 !important;
     margin-top: var(--s) !important;
 
     #appMenu-zoomReset-button2,
@@ -102,7 +107,7 @@ panelview .toolbarbutton-1,
 #identity-popup-mainView-panel-header,
 #protections-popup-mainView-panel-header,
 .panel-header {
-    min-height: 34px !important;
+    min-height: 32px !important;
 }
 
 panelmultiview,
@@ -203,4 +208,189 @@ menuitem[badge]::after {
 #appMenu-library-history-button .toolbarbutton-icon,
 #appMenu-library-downloads-button .toolbarbutton-icon {
     display: none !important;
+} */
+
+/* для всех */
+
+* {
+    scrollbar-color: color-mix(in srgb, currentColor 15%, transparent) transparent !important;
+}
+
+menuseparator {
+    padding: 0 !important;
+    margin: var(--s) 0 !important;
+}
+
+#customization-footer {
+    gap: var(--s) !important;
+}
+
+/* вкладки, верхняя панель */
+
+menupopup,
+panel {
+    --menuitem-padding: var(--btn) !important;
+    --panel-border-radius: var(--s) !important;
+    --panel-border-color: none !important;
+}
+
+arrowscrollbox {
+    padding: var(--s) 0 !important;
+}
+
+menu,
+menuitem,
+menucaption,
+menuitem.menuitem-iconic {
+    margin: 0 var(--s) !important;
+    padding: var(--btn) !important;
+    border-radius: var(--xs) !important;
+}
+
+menu,
+menuitem {
+    &:where([disabled="true"]) {
+        color: var(--button-text-color-ghost-disabled) !important;
+        opacity: var(--button-opacity-disabled) !important;
+    }
+
+    &:where([_moz-menuactive]:not([disabled="true"])) {
+        color: var(--button-text-color-ghost) !important;
+        background-color: var(--button-background-color-ghost-hover) !important;
+    }
+
+    &:where([_moz-menuactive][disabled="true"]) {
+        background-color: var(--button-background-color-ghost-disabled) !important;
+    }
+}
+
+menuitem[badge]::after {
+    margin: -2px;
+    margin-left: 16px !important;
+    border: none !important;
+    padding: var(--btn-s) !important;
+    background: var(--toolbarbutton-hover-background) !important;
+}
+
+#PlacesToolbarItems {
+    .bookmark-item {
+        margin: 0 !important;
+        padding: 0 var(--s) !important;
+        margin-bottom: 4px !important;
+    }
+        
+    .toolbar-menupopup .bookmark-item {
+        padding: var(--btn) !important;
+        margin: 0 var(--s) !important;
+    }
+}
+
+/* application menu */
+
+panelmultiview,
+toolbarseparator {
+    padding: 0 !important;
+    margin: var(--s) 0 !important;
+}
+
+.subviewbutton {
+    padding: var(--btn) !important;
+    margin: 0 var(--s) !important;
+}
+
+.panel-subview-body {
+    padding: 0 !important;
+}
+
+.subview-subheader {
+    margin-left: 2px !important;
+}
+
+/* #appMenu-zoom-controls > .toolbarbutton-text,
+#PanelUI-signedin-panel > .subviewbutton .toolbarbutton-text,
+#fxa-manage-account-button > vbox,
+#PanelUI-fxa-menu-syncnow-button > hbox {
+    padding-inline-start: 0 !important;
+} */
+
+/* .widget-overflow-list .toolbarbutton-1:not(.toolbarbutton-combined)>.toolbarbutton-text,
+.subviewbutton:not(#appMenu-zoom-controls > .subviewbutton)>.toolbarbutton-icon+.toolbarbutton-text,
+#appMenu-fxa-label2>vbox {
+    padding-inline-start: 0 !important;
+}
+
+.subviewbutton:is(#appmenu-developer-tools-view > .subviewbutton)>.toolbarbutton-icon+.toolbarbutton-text {
+    padding-inline-start: 0 !important;
+} */
+
+#appMenu-fxa-status2,
+.panel-header {
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: 32px !important;
+
+    h1 {
+        padding: 0 !important;
+        margin: 0 !important;
+        padding-bottom: var(--xxs) !important;
+
+        & > span::before {
+            --header-image: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    }
+}
+
+#appMenu-zoom-controls {
+    padding: 0 var(--m) !important;
+    padding-top: var(--s) !important;
+    margin: 0 !important;
+    margin-top: var(--s) !important;
+
+    #appMenu-zoomReset-button2,
+    #appMenu-zoomEnlarge-button2,
+    #appMenu-zoomReduce-button2 {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #appMenu-zoomReset-button2 {
+        padding: 0 var(--s) !important;
+    }
+
+    #appMenu-fullscreen-button2 {
+        display: none !important;
+    }
+
+    :is(label, description)[value][crop]::before {
+        padding: var(--btn-s) !important;
+    }
+}
+
+#PanelUI-developer-tools .subviewbutton>.toolbarbutton-icon+.toolbarbutton-text {
+    padding-inline-start: 0 !important;
+}
+
+#appMenu-multiView panelview,
+#identity-popup-multiView panelview {
+    outline: none !important;
+}
+
+/* контекстное меню сайта */
+
+#context-navigation {
+    margin: var(--s) var(--m) !important;
+    gap: var(--s);
+
+    .menuitem-iconic {
+        background: color-mix(in srgb, currentColor 6%, transparent) !important;
+        padding: var(--xs) var(--s) !important;
+        margin: 0 !important;
+        border-radius: var(--button-border-radius) !important;
+
+        &:hover {
+            background: color-mix(in srgb, currentColor 10%, transparent) !important;
+        }
+    }
 }

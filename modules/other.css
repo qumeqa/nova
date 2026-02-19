@@ -10,29 +10,15 @@
     }
 }
 
-#PlacesToolbarItems .bookmark-item {
+#PlacesChevron {
     margin: 0 !important;
-    padding: 0 var(--s) !important;
     margin-bottom: 4px !important;
-
-    .toolbar-menupopup .bookmark-item {
-        padding: var(--btn) !important;
-        height: max-content !important;
-    }
 }
 
 #zen-appcontent-navbar-wrapper[should-hide="true"] {
-    #PersonalToolbar .bookmark-item {
+    #PlacesToolbarItems .bookmark-item {
         margin: 4px 0 !important;
     }
-}
-
-#PlacesChevron {
-    margin-block: 4px !important;
-
-    .toolbarbutton-icon {
-            height: 100% !important;
-        }
 }
 
 /* screenshot */
@@ -43,26 +29,7 @@
     outline: none !important;
 }
 
-/* menu */
-
-#context-navigation {
-    margin: var(--s) var(--m) !important;
-    gap: var(--s);
-
-    .menuitem-iconic {
-        background: color-mix(in srgb, currentColor 6%, transparent) !important;
-        padding: var(--xs) var(--s) !important;
-        border-radius: var(--button-border-radius) !important;
-
-        &:hover {
-            background: color-mix(in srgb,
-                    currentColor 10%,
-                    transparent) !important;
-        }
-    }
-}
-
-/* statusbar */
+/* statusbar and tooltip */
 
 #statuspanel {
     margin: 10px !important;
@@ -81,13 +48,9 @@
     padding: 0 !important;
 
     richlistitem {
-        margin: 0 !important;
-        padding: 0 var(--s) !important;
-        border-radius: 0 !important;
-    }
-
-    description {
-        margin-block: 0 !important
+        margin: 0 var(--s) !important;
+        padding: 0 !important;
+        padding-right: var(--s) !important;
     }
 }
 
@@ -98,7 +61,7 @@
 }
 
 #emptyDownloads {
-    padding: var(--m) !important;
+    padding: var(--s) var(--m) !important;
     color: var(--text-color-deemphasized) !important;
 }
 
@@ -110,13 +73,7 @@
         outline: none !important;
     }
 
-    .urlbarView {
-        margin: 0 !important;
-        width: 100% !important;
-    }
-
     .urlbarView-row {
-        border-radius: 0 !important;
         padding: 0 !important;
 
         &:active {
@@ -128,20 +85,24 @@
         }
     }
 
-    .urlbarView-row-inner {
-        padding-left: var(--m) !important;
-    }
-
-    .urlbarView-button-result-menu {
-        margin-right: var(--m) !important;
-    }
-
     .urlbarView-favicon {
         background: none !important;
     }
 
+    /* .urlbarView-row-inner {
+        padding-left: var(--s) !important;
+    }
+
+    .urlbarView-button-result-menu {
+        margin-right: var(--s) !important;
+    }
+
     #identity-box[pageproxystate="invalid"] {
         margin-inline-end: var(--s) !important;
+    } */
+
+    .urlbarView-button-result-menu {
+        margin-right: var(--m) !important;
     }
 
     #identity-icon-box {
@@ -149,8 +110,17 @@
     }
 }
 
+/* :root:not([zen-single-toolbar="true"]):not([zen-has-empty-tab="true"]) #urlbar:not([breakout-extend="true"]) .urlbar-input-container {
+    padding: 2px !important;
+} */
+
 #translations-button {
     height: 100% !important;
+}
+
+#zen-site-data-icon-button {
+    aspect-ratio: 1 !important;
+    justify-content: center !important;
 }
 
 /* tabs */
@@ -187,10 +157,15 @@ zen-workspace-icons .subviewbutton {
     }
 }
 
-
 #main-window[zen-default-theme="true"] {
     #titlebar {
         background: var(--zen-main-browser-background) !important;
+    }
+}
+
+.zen-essentials-container {
+    :root[zen-single-toolbar="true"] &:not(:empty) {
+        padding-top: var(--zen-toolbox-padding) !important;
     }
 }
 
@@ -224,4 +199,9 @@ zen-workspace-icons .subviewbutton {
 #PanelUI-zen-gradient-generator-color-page-left,
 #PanelUI-zen-gradient-generator-color-page-right {
     border-radius: var(--button-border-radius) !important;
+}
+
+#PanelUI-zen-gradient-generator-color-actions button,
+#PanelUI-zen-gradient-generator-scheme button {
+    margin: 0 !important;
 }

@@ -1,5 +1,4 @@
 .dialogBox {
-    border: none !important;
     outline: none !important;
 }
 
@@ -7,15 +6,11 @@
     gap: 0 !important;
 }
 
-:root:not([zen-single-toolbar="true"]):not([zen-has-empty-tab="true"]) #urlbar:not([breakout-extend="true"]) .urlbar-input-container {
-    padding: 2px !important;
-}
-
 button[part="dialog-button"] {
     padding-left: 1.2em !important;
     padding-right: 1.2em !important;
     --button-text-color: var(--button-text-color) !important;
-    --button-background-color: var(--button-background-color) !important;
+    --button-background-color: color-mix(in srgb, currentColor 6%, transparent) !important;
     color: var(--button-text-color) !important;
     background: var(--button-background-color) !important;
 
@@ -31,7 +26,7 @@ button[part="dialog-button"] {
 }
 
 button[part="dialog-button"]:hover {
-    --button-background-color: color-mix(in srgb, currentColor 5%, transparent) !important;
+    --button-background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
 
     &[default="true"],
     &[default="false"] {
@@ -41,7 +36,7 @@ button[part="dialog-button"]:hover {
 
 button[part="dialog-button"]:hover:active {
     scale: 0.98;
-    --button-background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+    --button-background-color: color-mix(in srgb, currentColor 14%, transparent) !important;
 
     &[default="true"],
     &[default="false"] {

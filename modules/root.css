@@ -1,6 +1,6 @@
 :root {
     --btn-s: 4px 8px;
-    --btn: 8px 16px;
+    --btn: 8px;
     --btn-b: 12px 24px;
     --dd: 12px 16px;
 
@@ -9,9 +9,12 @@
     --s: 8px;
     --m: 16px;
     --l: 32px;
-    
-    --di-w: 44px;
-    --di-h: 44px;
+
+    --panelui-subview-transition-duration: 300ms !important;
+
+    --button-background-color: color-mix(in srgb, currentColor 6%, transparent) !important;
+    --button-background-color-hover: color-mix(in srgb, currentColor 10%, transparent) !important;
+    --button-background-color-active: color-mix(in srgb, currentColor 14%, transparent) !important;
 
     --zen-dialog-background: var(--arrowpanel-background) !important;
     --button-border: none !important;

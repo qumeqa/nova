@@ -52,7 +52,12 @@
 #full-page-translations-panel-to,
 #full-page-translations-panel-from {
     padding: var(--dd) !important;
+    background: var(--button-background-color) !important;
     margin: 0 !important;
+
+    &:hover, &:focus {
+        background: var(--button-background-color-hover) !important;
+    }
 }
 
 #full-page-translations-panel-from {

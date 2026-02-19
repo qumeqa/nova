@@ -30,6 +30,7 @@
 
     & toolbarbutton {
         width: calc((100% - var(--s) * 3) / 4) !important;
+        margin: 0 !important;
         aspect-ratio: 6 / 5 !important;
         height: auto !important;
         border-radius: var(--button-border-radius) !important;
@@ -71,6 +72,7 @@
     #zen-site-data-new-addon-button-container {
         &>* {
             width: calc((100% - var(--s) * 3) / 4) !important;
+            margin: 0 !important;
             aspect-ratio: 6 / 5 !important;
             height: auto !important;
             transform: initial !important;
@@ -117,11 +119,6 @@
     }
 }
 
-#zen-site-data-footer {
-    gap: var(--xs) !important;
-    justify-content: space-between;
-}
-
 #zen-site-data-security-info, #identity-popup-security-button {
     list-style-image: none !important;
 
@@ -131,12 +128,23 @@
 }
 
 #zen-site-data-footer {
+    gap: var(--xs) !important;
+    justify-content: space-between;
     border-top: none !important;
     padding-top: var(--m) !important;
+
+    toolbarbutton {
+        margin: 0 !important;
+        padding-inline: var(--m) !important;
+    }
 
     #zen-site-data-actions {
         width: 34px !important;
         height: 34px !important;
+    }
+
+    .toolbarbutton-text {
+        padding-inline-start: 0 !important;
     }
 }
 

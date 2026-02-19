@@ -5,16 +5,20 @@
         --panel-border-color: var(--panel-separator-color) !important;
     }
 
-    /* mod support */
-    #statuspanel-label,
-    findbar {
-        border: 1px solid var(--panel-separator-color) !important;
-    }
+    /* .dialogBox {
+        outline: 1px solid color-mix(in srgb, currentColor 10%, transparent) !important;
+    } */
 
     #urlbar[zen-newtab="true"] {
         .urlbar-background {
             border: 1px solid var(--panel-separator-color) !important;
         }
+    }
+
+    /* mod support */
+    #statuspanel-label,
+    findbar {
+        border: 1px solid var(--panel-separator-color) !important;
     }
 }
 
@@ -78,30 +82,30 @@
 
 @media (-moz-bool-pref: "nova-custom-border-radius") {
     :root {
-            --border-radius-xsmall: 4px !important;
-            --border-radius-small: 8px !important;
-            --border-radius-large: 32px !important;
-            --button-border-radius: var(--border-radius-medium) !important;
-            --border-radius-medium: 16px !important;
+        --border-radius-xsmall: 4px !important;
+        --border-radius-small: 8px !important;
+        --border-radius-large: 32px !important;
+        --button-border-radius: var(--border-radius-medium) !important;
+        --border-radius-medium: 16px !important;
 
-            --button-border-radius: var(--border-radius-small) !important;
-            --urlbar-icon-border-radius: var(--border-radius-medium) !important;
-            --arrowpanel-menuitem-border-radius: var(--border-radius-small) !important;
-        }
-    
-        menupopup,
-        panel {
-            --panel-border-radius: 12px !important;
-        }
-    
-        #navigator-toolbox {
-            --border-radius-medium: 12px !important;
-            --tab-border-radius: var(--border-radius-small) !important;
-        }
-    
-        .toolbarbutton-1:not(#tabs-newtab-button) {
-            --tab-border-radius: var(--border-radius-small) !important;
-        }
+        --button-border-radius: var(--border-radius-small) !important;
+        --urlbar-icon-border-radius: var(--border-radius-medium) !important;
+        --arrowpanel-menuitem-border-radius: var(--border-radius-small) !important;
+    }
+
+    menupopup,
+    panel {
+        --panel-border-radius: 12px !important;
+    }
+
+    #navigator-toolbox {
+        --border-radius-medium: 12px !important;
+        --tab-border-radius: var(--border-radius-small) !important;
+    }
+
+    .toolbarbutton-1:not(#tabs-newtab-button) {
+        --tab-border-radius: var(--border-radius-small) !important;
+    }
 }
 
 @media (-moz-bool-pref: "nova-remove-border-radius") {
@@ -132,6 +136,135 @@
 
     .toolbarbutton-1:not(#tabs-newtab-button) {
         --tab-border-radius: 0 !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-appmenu-icons") {
+
+    #appMenu-new-tab-button2,
+    #appMenu-new-window-button2,
+    #appMenu-new-zen-unsynced-window-button,
+    #appMenu-new-ai-window-button,
+    #appMenu-new-classic-window-button,
+    #appMenu-new-private-window-button2,
+    #appMenu-bookmarks-button,
+    #appMenu-history-button,
+    #appMenu-downloads-button,
+    #appMenu-passwords-button,
+    #appMenu-extensions-themes-button,
+    #appMenu-unified-extensions-button,
+    #appMenu-print-button2,
+    #appMenu-save-file-button2,
+    #appMenu-find-button2,
+    #appMenu-translate-button,
+    #appMenu-settings-button,
+    #appMenu-more-button2,
+    #appMenu-report-broken-site-button,
+    #appMenu-help-button2,
+    #appMenu-quit-button2,
+    #appMenuRecentlyClosedTabs,
+    #appMenuSearchHistory,
+    #appMenuClearRecentHistory,
+    #PanelUI-historyMore,
+    #panelMenuBookmarkThisPage,
+    #panelMenu_searchBookmarks,
+    #panelMenu_viewBookmarksToolbar,
+    #panelMenu_showAllBookmarks,
+    #appmenu-moreTools-button {
+        list-style-image: none !important;
+
+        label {
+            padding: 0 !important;
+        }
+    }
+
+    #appMenu-zoom-controls > .toolbarbutton-text,
+    #PanelUI-signedin-panel > .subviewbutton .toolbarbutton-text,
+    #appmenu-developer-tools-view .subviewbutton > .toolbarbutton-icon + .toolbarbutton-text,
+    .sync-menuitem:not(.subviewbutton-iconic) > .toolbarbutton-icon + .toolbarbutton-text,
+    #fxa-manage-account-button>vbox,
+    #PanelUI-fxa-menu-syncnow-button>hbox,
+    #identity-popup-security-button,
+    #identity-popup-clear-sitedata-button,
+    #identity-popup-more-info,
+    .restoreallitem > .toolbarbutton-icon + .toolbarbutton-text {
+        padding-inline-start: 0 !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-create-new-icons") {
+
+    #zenCreateNewPopup .menu-icon,
+    #appMenu-library-bookmarks-button .toolbarbutton-icon,
+    #appMenu-library-history-button .toolbarbutton-icon,
+    #appMenu-library-downloads-button .toolbarbutton-icon {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-popup-tab") {
+    #context_openANewTab {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-popup-folder") {
+
+    #zen-context-menu-new-folder,
+    #mainPopupSet menuseparator:nth-of-type(1) {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-popup-rename") {
+    #context_zen-edit-tab-title {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-popup-icon") {
+
+    #context_zen-edit-tab-icon,
+    #mainPopupSet menuseparator:nth-of-type(3) {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-popup-share") {
+    .share-tab-url-item {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-toolbar-folder") {
+
+    #zen-context-menu-new-folder-toolbar,
+    #customizationMenuSeparator {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-appmenu-print") {
+    #appMenu-print-button2 {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-appmenu-save") {
+    #appMenu-save-file-button2 {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-appmenu-help") {
+    #appMenu-help-button2 {
+        display: none !important;
+    }
+}
+
+@media (-moz-bool-pref: "nova-appmenu-report") {
+    #appMenu-report-broken-site-button {
+        display: none !important;
     }
 }
 
@@ -229,80 +362,6 @@
             --tab-border-radius: 20px !important;
         }
 } */
-
-@media (-moz-pref("nova-enable-corner-fix")) {
-
-    html:not([sizemode="fullscreen"]) .browserStack,
-    browser {
-        clip-path: inset(0 round var(--zen-native-inner-radius));
-    }
-}
-
-@media (-moz-bool-pref: "nova-popup-tab") {
-    #context_openANewTab {
-        display: none !important;
-    }
-}
-
-@media (-moz-bool-pref: "nova-popup-folder") {
-
-    #zen-context-menu-new-folder,
-    #mainPopupSet menuseparator:nth-of-type(1) {
-        display: none !important;
-    }
-}
-
-@media (-moz-bool-pref: "nova-popup-rename") {
-    #context_zen-edit-tab-title {
-        display: none !important;
-    }
-}
-
-@media (-moz-bool-pref: "nova-popup-icon") {
-
-    #context_zen-edit-tab-icon,
-    #mainPopupSet menuseparator:nth-of-type(3) {
-        display: none !important;
-    }
-}
-
-@media (-moz-bool-pref: "nova-popup-share") {
-    .share-tab-url-item {
-        display: none !important;
-    }
-}
-
-@media (-moz-bool-pref: "nova-toolbar-folder") {
-
-    #zen-context-menu-new-folder-toolbar,
-    #customizationMenuSeparator {
-        display: none !important;
-    }
-}
-
-@media (-moz-bool-pref: "nova-appmenu-print") {
-    #appMenu-print-button2 {
-        display: none !important;
-    }
-}
-
-@media (-moz-bool-pref: "nova-appmenu-save") {
-    #appMenu-save-file-button2 {
-        display: none !important;
-    }
-}
-
-@media (-moz-bool-pref: "nova-appmenu-help") {
-    #appMenu-help-button2 {
-        display: none !important;
-    }
-}
-
-@media (-moz-bool-pref: "nova-appmenu-report") {
-    #appMenu-report-broken-site-button {
-        display: none !important;
-    }
-}
 
 @media (-moz-pref("nova-enable-quietify")) {
     .tabbrowser-tab img {

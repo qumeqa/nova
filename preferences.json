@@ -26,25 +26,61 @@
     {
         "type": "checkbox",
         "property": "nova-enable-new-tabs",
-        "label": "New Essentials background colors (experemental)",
+        "label": "New Essentials colors",
         "defaultValue": true
     },
     {
         "type": "checkbox",
+        "property": "nova-enable-quietify",
+        "label": "Sound visualization on the tab",
+        "defaultValue": true
+    },
+    {
+        "type": "text",
+        "label": "Hide icons",
+        "margin": "30px 0 15px 0",
+        "size": "20px"
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-appmenu-icons",
+        "label": "Application menu",
+        "defaultValue": true
+    },
+    {
+        "type": "checkbox",
+        "property": "nova-create-new-icons",
+        "label": "Create new popup",
+        "defaultValue": true
+    },
+    {
+        "type": "text",
+        "label": "Experemental options",
+        "margin": "30px 0 15px 0",
+        "size": "20px"
+    },
+    {
+        "type": "Experemental options",
+        "label": "General",
+        "margin": "30px 0 15px 0",
+        "size": "20px"
+    },
+    {
+        "type": "checkbox",
         "property": "nova-custom-border-radius",
-        "label": "Larger border radius (experemental)",
+        "label": "Large border radius",
         "defaultValue": false
     },
     {
         "type": "checkbox",
         "property": "nova-remove-border-radius",
-        "label": "Remove border radius (experemental)",
+        "label": "Remove border radius",
         "defaultValue": false
     },
     {
         "type": "checkbox",
         "property": "nova-custom-font",
-        "label": "Custom font (experemental)",
+        "label": "Custom font",
         "defaultValue": false
     },
     {
@@ -55,25 +91,7 @@
     },
     {
         "type": "text",
-        "label": "Mods",
-        "margin": "30px 0 15px 0",
-        "size": "20px"
-    },
-    {
-        "type": "checkbox",
-        "property": "nova-enable-corner-fix",
-        "label": "Bleeding Corners Fix (fix the white outlines on the rounded corners)",
-        "defaultValue": true
-    },
-    {
-        "type": "checkbox",
-        "property": "nova-enable-quietify",
-        "label": "Quietify (add a calm visualizer type of animation to mute button to use with style and ease)",
-        "defaultValue": true
-    },
-    {
-        "type": "text",
-        "label": "Hide popup buttons",
+        "label": "Hide tab popup buttons",
         "margin": "30px 0 15px 0",
         "size": "20px"
     },
