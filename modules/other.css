@@ -1,3 +1,9 @@
+/* все */
+
+moz-button-group {
+    gap: var(--s) !important;
+}
+
 /* bookmarks */
 
 #PersonalToolbar {
@@ -204,4 +210,23 @@ zen-workspace-icons .subviewbutton {
 #PanelUI-zen-gradient-generator-color-actions button,
 #PanelUI-zen-gradient-generator-scheme button {
     margin: 0 !important;
+}
+
+/* остальные */
+
+#customization-footer {
+    gap: var(--s) !important;
+}
+
+.zen-toast {
+    border-radius: 20px !important;
+    padding: 8px 16px !important;
+    background: var(--arrowpanel-background) !important;
+}
+
+.sineToast {
+    border-radius: 12px !important;
+    padding: 12px !important;
+    padding-left: 16px !important;
+    background: var(--arrowpanel-background) !important;
 }

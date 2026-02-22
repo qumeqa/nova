@@ -1,215 +1,3 @@
-/* menupopup,
-panel {
-    --menuitem-padding: var(--btn) !important;
-    --panel-border-radius: var(--s) !important;
-    --panel-border-color: none !important;
-}
-
-* {
-    scrollbar-color: color-mix(in srgb, currentColor 15%, transparent) transparent !important;
-}
-
-.subviewbutton {
-    padding: var(--btn) !important;
-    margin: 0 var(--s) !important;
-}
-
-panelview .toolbarbutton-1,
-.widget-overflow-list .toolbarbutton-1 {
-    padding: var(--btn) !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-}
-
-#appMenu-fxa-status2 {
-    padding: 0 !important;
-    margin: 0 !important;
-
-    label {
-        padding-inline-start: var(--xs) !important;
-    }
-}
-
-#appMenu-zoom-controls {
-    padding: 0 var(--m) !important;
-    padding-top: var(--s) !important;
-    margin: 0 !important;
-    margin-top: var(--s) !important;
-
-    #appMenu-zoomReset-button2,
-    #appMenu-zoomEnlarge-button2,
-    #appMenu-zoomReduce-button2 {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    #appMenu-zoomReset-button2 {
-        padding: 0 var(--s) !important;
-    }
-
-    #appMenu-fullscreen-button2 {
-        display: none !important;
-    }
-
-    :is(label, description)[value][crop]::before {
-        padding: var(--btn-s) !important;
-    }
-}
-
-#appMenu-zoom-controls>.toolbarbutton-text,
-#fxa-manage-account-button>vbox,
-#PanelUI-fxa-menu-syncnow-button>hbox {
-    padding-inline-start: 0 !important;
-}
-
-.widget-overflow-list .toolbarbutton-1:not(.toolbarbutton-combined)>.toolbarbutton-text,
-.subviewbutton:not(#appMenu-zoom-controls > .subviewbutton)>.toolbarbutton-icon+.toolbarbutton-text,
-#appMenu-fxa-label2>vbox {
-    padding-inline-start: 0 !important;
-}
-
-.panel-header {
-    padding: 0 !important;
-    height: max-content !important;
-
-    h1 {
-        padding: 0 !important;
-        margin: 0 !important;
-        padding-bottom: var(--xxs) !important;
-    }
-}
-
-#appMenu-fxa-text {
-    padding-left: var(--m) !important;
-}
-
-#PanelUI-fxa .panel-header h1 {
-    padding-bottom: var(--xs) !important;
-}
-
-.panel-header>h1>span::before {
-    --header-image: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-.subviewbutton-back {
-    margin: 0 var(--s) !important;
-    padding: var(--s) !important;
-    border-radius: var(--button-border-radius) !important;
-}
-
-.panel-subview-body {
-    padding: 0 !important;
-}
-
-#permission-popup-mainView-panel-header,
-#identity-popup-mainView-panel-header,
-#protections-popup-mainView-panel-header,
-.panel-header {
-    min-height: 32px !important;
-}
-
-panelmultiview,
-toolbarseparator {
-    padding: 0 !important;
-    margin: var(--s) 0 !important;
-}
-
-menu,
-menuitem,
-menucaption {
-    margin: 0 !important;
-    border-radius: 0 !important;
-}
-
-arrowscrollbox {
-    padding: var(--s) 0 !important;
-}
-
-menuseparator {
-    padding: 0 !important;
-    margin: var(--s) 0 !important;
-}
-
-menu,
-menuitem {
-    &:where([disabled="true"]) {
-        color: var(--button-text-color-ghost-disabled) !important;
-        opacity: var(--button-opacity-disabled) !important;
-    }
-
-    &:where([_moz-menuactive]:not([disabled="true"])) {
-        color: var(--button-text-color-ghost) !important;
-        background-color: var(--button-background-color-ghost-hover) !important;
-    }
-
-    &:where([_moz-menuactive][disabled="true"]) {
-        background-color: var(--button-background-color-ghost-disabled) !important;
-    }
-}
-
-.menu-icon {
-    margin-top: 0 !important;
-}
-
-:is(.subviewbutton-iconic, #appMenu-fxa-label2):not(menupopup[needsgutter] > *) label {
-    margin-left: var(--s) !important;
-}
-
-menuitem[badge]::after {
-    margin-left: 16px !important;
-    margin-block: -10px !important;
-    border: none !important;
-    padding: var(--btn-s) !important;
-    background: var(--toolbarbutton-hover-background) !important;
-}
-
-#appMenu-new-tab-button2,
-#appMenu-new-window-button2,
-#appMenu-new-zen-unsynced-window-button,
-#appMenu-new-ai-window-button,
-#appMenu-new-classic-window-button,
-#appMenu-new-private-window-button2,
-#appMenu-bookmarks-button,
-#appMenu-history-button,
-#appMenu-downloads-button,
-#appMenu-passwords-button,
-#appMenu-extensions-themes-button,
-#appMenu-unified-extensions-button,
-#appMenu-print-button2,
-#appMenu-save-file-button2,
-#appMenu-find-button2,
-#appMenu-translate-button,
-#appMenu-settings-button,
-#appMenu-more-button2,
-#appMenu-report-broken-site-button,
-#appMenu-help-button2,
-#appMenu-quit-button2,
-#appMenuRecentlyClosedTabs,
-#appMenuSearchHistory,
-#appMenuClearRecentHistory,
-#PanelUI-historyMore,
-#panelMenuBookmarkThisPage,
-#panelMenu_searchBookmarks,
-#panelMenu_viewBookmarksToolbar,
-#panelMenu_showAllBookmarks,
-#appmenu-moreTools-button {
-    list-style-image: none !important;
-
-    label {
-        padding: 0 !important;
-    }
-}
-
-#widget-overflow-list .toolbarbutton-icon,
-#zenCreateNewPopup .menu-icon,
-#appMenu-library-bookmarks-button .toolbarbutton-icon,
-#appMenu-library-history-button .toolbarbutton-icon,
-#appMenu-library-downloads-button .toolbarbutton-icon {
-    display: none !important;
-} */
-
 /* для всех */
 
 * {
@@ -219,10 +7,6 @@ menuitem[badge]::after {
 menuseparator {
     padding: 0 !important;
     margin: var(--s) 0 !important;
-}
-
-#customization-footer {
-    gap: var(--s) !important;
 }
 
 /* вкладки, верхняя панель */
@@ -372,25 +156,166 @@ toolbarseparator {
     padding-inline-start: 0 !important;
 }
 
-#appMenu-multiView panelview,
-#identity-popup-multiView panelview {
-    outline: none !important;
-}
-
 /* контекстное меню сайта */
 
 #context-navigation {
-    margin: var(--s) var(--m) !important;
+    margin: 0 var(--s) !important;
     gap: var(--s);
 
     .menuitem-iconic {
-        background: color-mix(in srgb, currentColor 6%, transparent) !important;
         padding: var(--xs) var(--s) !important;
         margin: 0 !important;
         border-radius: var(--button-border-radius) !important;
+    }
+}
+
+/* dialog */
+
+.dialogBox {
+    outline: none !important;
+    border: none !important;
+}
+
+#zen-workspaces-button {
+    gap: 0 !important;
+}
+
+button[part="dialog-button"] {
+    padding-left: 1.2em !important;
+    padding-right: 1.2em !important;
+    --button-text-color: var(--button-text-color) !important;
+    --button-background-color: color-mix(in srgb, currentColor 6%, transparent) !important;
+    color: var(--button-text-color) !important;
+    background: var(--button-background-color) !important;
+
+    &[default="true"],
+    &[default="false"] {
+        color: light-dark(var(--zen-branding-paper), var(--zen-branding-dark)) !important;
+        background: var(--color-accent-primary) !important;
+    }
+
+    &::after {
+        display: none !important;
+    }
+}
+
+button[part="dialog-button"]:hover {
+    --button-background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+
+    &[default="true"],
+    &[default="false"] {
+        background: var(--color-accent-primary-hover) !important;
+    }
+}
+
+button[part="dialog-button"]:hover:active {
+    scale: 0.98;
+    --button-background-color: color-mix(in srgb, currentColor 14%, transparent) !important;
+
+    &[default="true"],
+    &[default="false"] {
+        background: var(--color-accent-primary-active);
+    }
+}
+
+/* bookmark */
+
+#zenEditBookmarkPanelFaviconContainer {
+    display: none !important;
+}
+
+#editBookmarkPanel .panel-footer {
+    padding-top: var(--s) !important;
+}
+
+#editBookmarkPanel .panel-header {
+    padding: var(--m) !important;
+    padding-bottom: 0 !important;
+}
+
+#editBookmarkPanelContent {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    input, menulist {
+        padding: var(--btn) !important;
+        background: var(--button-background-color) !important;
+        outline: none !important;
+        border: none !important;
+        border-radius: var(--button-border-radius) !important;
 
         &:hover {
-            background: color-mix(in srgb, currentColor 10%, transparent) !important;
+            background-color: var(--button-background-color-hover) !important;
         }
+
+        &:active, &:focus {
+            background-color: var(--button-background-color-active) !important;
+        }
+    }
+
+    .workspace-trigger {
+        padding: var(--btn) !important;
+        background: var(--button-background-color) !important;
+        outline: none !important;
+        border: none !important;
+        border-radius: var(--button-border-radius) !important;
+    }
+
+    label {
+        color: var(--text-color-deemphasized) !important;
+    }
+}
+
+#editBookmarkPanel #editBookmarkPanelContent {
+    padding: 0 var(--m) !important;
+}
+
+#titleContainer {
+    margin: 0 !important;
+}
+
+label.editBMPanel_nameRow {
+    padding-top: var(--m) !important;
+    padding-bottom: var(--s) !important;
+}
+
+#bookmarkpropertiesdialog #editBookmarkPanelContent #editBMPanel_tagsField,
+#bookmarkpropertiesdialog #editBookmarkPanelContent #editBMPanel_folderMenuList,
+#bookmarkpropertiesdialog #editBookmarkPanelContent #editBMPanel_workspaceSummary {
+    margin-inline-end: var(--s) !important;
+}
+
+#editBookmarkPanel .expander-up,
+#editBookmarkPanel .expander-down {
+    margin-inline-start: var(--s) !important;
+}
+
+#bookmarkpropertiesdialog .caption-label {
+    margin: 0 !important;
+    margin-top: var(--s) !important;
+}
+
+#bookmarkpropertiesdialog #editBookmarkPanelContent label[control] {
+    margin-inline-start: 0;
+    margin-block: 0 var(--s) !important;
+}
+
+.dialog-button-box {
+    padding-top: var(--m) !important;
+}
+
+.zenEditBMPanel_fieldContainer {
+    margin-top: 0 !important;
+}
+
+.zenEditBMPanel_fieldContainer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: initial !important;
+
+    label.hideable {
+        color: var(--text-color-deemphasized) !important;
+        padding-top: var(--m) !important;
+        padding-bottom: var(--s) !important;
     }
 }

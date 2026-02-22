@@ -8,7 +8,7 @@
     {
         "type": "checkbox",
         "property": "nova-enable-border",
-        "label": "Enable border (appears around all pop-ups and panels)",
+        "label": "Enable border",
         "defaultValue": false
     },
     {

@@ -1,0 +1,116 @@
+.sineCommandPalette {
+    position: fixed !important;
+    height: fit-content !important;
+    width: 50vw !important;
+    max-width: 600px !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border: 1px solid var(--panel-separator-color) !important;
+    background: var(--arrowpanel-background) !important;
+    z-index: 2000 !important;
+    box-shadow: var(--box-shadow-level-3) !important;
+    border-radius: 20px !important;
+    transition:
+        visibility 0.3s ease,
+        opacity 0.3s ease !important;
+    box-sizing: border-box !important;
+
+    &[hidden] {
+        display: block !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+}
+
+.sineCommandInput,
+.sineCommandSearch {
+    &>input,
+    &>div {
+        padding: 20px !important;
+        box-sizing: border-box !important;
+        font-size: 16px !important;
+        width: 100% !important;
+    }
+
+    &>input {
+        background: transparent !important;
+        border: none !important;
+        padding-bottom: 0 !important;
+        outline: none !important;
+    }
+
+    &>hr {
+        display: none !important;
+    }
+
+    &>div {
+        padding-top: 20px !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px !important;
+
+        &>button {
+            padding: 10px !important;
+            /* background: color-mix(in srgb, currentColor 6%, transparent) !important; */
+            border: none !important;
+            outline: none !important;
+            border-radius: 8px !important;
+            margin: 0 !important;
+
+            /* &:hover {
+                background: color-mix(in srgb, currentColor 10%, transparent) !important;
+            }
+
+            &[selected] {
+                background: color-mix(in srgb, currentColor 20%, transparent) !important;
+
+                &:hover {
+                    background: color-mix(in srgb, currentColor 24%, transparent) !important;
+                }
+            } */
+        }
+    }
+}
+
+.sineToastManager {
+    position: fixed !important;
+    bottom: 10px !important;
+    right: 10px !important;
+    z-index: 2000 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+
+    .sineToast {
+        min-width: 100px !important;
+        height: 30px !important;
+        color: var(--toolbar-color, light-dark(black, lightgray)) !important;
+        border-radius: 20px !important;
+        padding: 10px 30px !important;
+        background: var(--arrowpanel-background) !important;
+
+        .description {
+            color: var(--text-color-deemphasized) !important;
+        }
+
+        :has(button) {
+            padding-right: 10px !important;
+        }
+
+        button {
+            background: color-mix(in srgb, currentColor 6%, transparent) !important;
+            color: var(--toolbar-color, light-dark(black, lightgray)) !important;
+            border: none !important;
+            outline: none !important;
+            padding: 10px 15px !important;
+            border-radius: 8px !important;
+            cursor: pointer !important;
+            margin: 0 !important;
+
+            &:hover {
+                background: color-mix(in srgb, currentColor 10%, transparent) !important;
+            }
+        }
+    }
+}

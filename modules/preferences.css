@@ -5,19 +5,19 @@
         --panel-border-color: var(--panel-separator-color) !important;
     }
 
-    /* .dialogBox {
-        outline: 1px solid color-mix(in srgb, currentColor 10%, transparent) !important;
-    } */
-
     #urlbar[zen-newtab="true"] {
         .urlbar-background {
             border: 1px solid var(--panel-separator-color) !important;
         }
     }
 
-    /* mod support */
     #statuspanel-label,
-    findbar {
+    findbar,
+    .zen-toast {
+        border: 1px solid var(--panel-separator-color) !important;
+    }
+
+    .dialogBox {
         border: 1px solid var(--panel-separator-color) !important;
     }
 }
