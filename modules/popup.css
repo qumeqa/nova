@@ -176,6 +176,11 @@ toolbarseparator {
     border: none !important;
 }
 
+#infoRow {
+    margin: 0 !important;
+    margin-top: var(--m) !important;
+}
+
 #zen-workspaces-button {
     gap: 0 !important;
 }
