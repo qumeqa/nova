@@ -290,6 +290,11 @@ label.editBMPanel_nameRow {
     margin-inline-start: var(--s) !important;
 }
 
+#bookmarkpropertiesdialog {
+    overflow: auto !important;
+    min-height: 400px !important;
+}
+
 #bookmarkpropertiesdialog .caption-label {
     margin: 0 !important;
     margin-top: var(--s) !important;
