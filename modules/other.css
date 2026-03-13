@@ -163,11 +163,11 @@ zen-workspace-icons .subviewbutton {
     }
 }
 
-#main-window[zen-default-theme="true"] {
+/* #main-window[zen-default-theme="true"] {
     #titlebar {
         background: var(--zen-main-browser-background) !important;
     }
-}
+} */
 
 .zen-essentials-container {
     :root[zen-single-toolbar="true"] &:not(:empty) {
